@@ -25,3 +25,18 @@ header {
     align-items: center;
     z-index: 100;
 }
+
+.logo {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: transparent;
+    background: linear-gradient(to right, #CC19CC,#4315D7);
+    -webkit-background-clip: text;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    border-image: linear-gradient(to right, #CC19CC, #4315D7) 1;
+    padding: 5px;
+}
+
