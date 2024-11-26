@@ -21,18 +21,21 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.3rem 10%;
+    padding: 1.0rem 10%;
+    margin-left: 4.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
+
 nav a {
     font-size: 20px;
     font-weight: 500;
     color: #A0FEFB;
     text-decoration: none;
+    margin-left: 6.0rem;
 }
 
 .logo {
@@ -45,6 +48,9 @@ nav a {
     border-radius: 40px;
     border-image: linear-gradient(to right, #CC19CC, #4315D7) 1;
     padding: 5px;
+    margin-left: -10rem;
 }
+
+
 
 
