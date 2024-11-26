@@ -21,26 +21,35 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.0rem 10%;
-    margin-left: 4.5rem;
+    padding: 1.0rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(112, 111, 111, 0.116);
+    filter: blur(50px);
+    z-index: -1;
+}
+
 
 nav a {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
     color: #A0FEFB;
     text-decoration: none;
-    margin-left: 6.0rem;
+    margin-left: 5.4rem;
 }
 
 .logo {
     font-size: 24px;
-    font-weight: 800;;
     color: transparent;
     background: linear-gradient(to right, #CC19CC,#4315D7);
     -webkit-background-clip: text;
@@ -48,9 +57,46 @@ nav a {
     border-radius: 40px;
     border-image: linear-gradient(to right, #CC19CC, #4315D7) 1;
     padding: 5px;
-    margin-left: -10rem;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
 }
 
 
+/*tablet*/
+@media (max-width: 992px) {
+    header {
+        padding: 1.3rem 5%;
+    }
+}
 
+/*Mobile*/
+@media (max-width: 768px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 17.7rem;
+        background: rgba(112, 111, 111, 0.116);
+        filter: blur(50px);
+    }
+
+    nav a {
+        display: block;
+        font-size: 16px;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
 
