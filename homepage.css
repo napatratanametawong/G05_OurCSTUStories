@@ -41,10 +41,17 @@ header {
 
 nav a {
     font-size: 18px;
-    color: #A0FEFB;
+    color: white;
     text-decoration: none;
     margin-left: 5.4rem;
+    padding: 6px 20px;
+    transition: .5s;
 }
+
+nav a:hover {
+    color: #A0FEFB;
+}
+
 
 .logo {
     font-size: 24px;
@@ -54,7 +61,7 @@ nav a {
     border: 2px solid transparent;
     border-radius: 40px;
     border-image: linear-gradient(to right, #CC19CC, #4315D7) 1;
-    padding: 5px;
+    padding: 8px;
 }
 
 #check {
@@ -65,7 +72,7 @@ nav a {
     position: absolute;
     right: 5%;
     font-size: 2.8rem;
-    color: #A0FEFB;
+    color: white;
     cursor: pointer;
     display: none;
 }
