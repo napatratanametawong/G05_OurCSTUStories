@@ -148,3 +148,20 @@ nav a:hover {
     }
 }
 
+/*guest book*/
+h2{
+    color: #A0FEFB;
+    font-size: 48px;
+    font-family: "Orbitron" ,sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    margin-top: 900px;
+    padding-bottom: 20px;
+}
+
+.subtitle{
+    color: white;
+    font-size: 24px;
+    font-family: "Mitr",serif;
+    text-align: center;
+}
