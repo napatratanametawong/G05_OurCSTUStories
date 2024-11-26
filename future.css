@@ -123,6 +123,6 @@ nav a:hover {
     }
 
     #check:checked~nav {
-        height: 10.3rem;
+        height: 12.0rem;
     }
 }
