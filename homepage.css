@@ -153,6 +153,9 @@ nav a:hover {
         gap: 250px;
     }
     
+    .gradient-box {
+        top: 35%;
+    }
 }
 
 /*Mobile*/
@@ -208,6 +211,19 @@ nav a:hover {
         gap: 100px;
     }
 
+    .gradient-box {
+        top: 19%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    
    
 }
 
