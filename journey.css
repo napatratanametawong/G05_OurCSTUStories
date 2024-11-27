@@ -27,6 +27,14 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(112, 111, 111, 0.116);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .header::before{
@@ -37,6 +45,9 @@ header {
     width: 100%;
     height: 100%;
     z-index: -1;
+    background: rgba(112, 111, 111, 0.116);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 
