@@ -124,7 +124,21 @@ nav a:hover {
         0 0 160px #0ef;
 }
 
-
+.gradient-box {
+    position: absolute;
+    bottom: 0;
+    top: 113%;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to top, 
+        rgba(4, 18, 40, 1), 
+        rgba(4, 18, 40, 0.96),
+        rgba(4, 18, 40, 0.91),
+        rgba(4, 18, 40, 0.77),
+        rgba(4, 18, 40, 0.5),
+        rgba(4, 18, 40, 0));
+    z-index: 1;
+}
 
 
 /*tablet*/
@@ -193,6 +207,7 @@ nav a:hover {
         top: 23%;
         gap: 100px;
     }
+
    
 }
 
