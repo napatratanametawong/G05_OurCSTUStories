@@ -211,6 +211,18 @@ nav a:hover {
    
 }
 
+/*members*/
+p.member-intro {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
 /*guest book*/
 h2{
     color: #A0FEFB;
