@@ -254,3 +254,13 @@ h2{
     width: 90%;
     margin: 0 auto;
 }
+
+.subtitle2{
+    color: #54F271;
+    font-size: 24px;
+    font-family: "Mitr",serif;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 40px;
+}
