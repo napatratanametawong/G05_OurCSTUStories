@@ -15,8 +15,6 @@ window.addEventListener('scroll', () => {
 
 
 
-
-
 //Journey
 
 
