@@ -16,6 +16,25 @@ body {
     padding-top: 90px;
 }
 
+/*effect when scroll*/
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+section {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
 /*navbar*/
 header {
     font-family: "Orbitron", sans-serif;
@@ -50,19 +69,37 @@ header::before{
     z-index: -1;
 }
 
-
 nav a {
     font-size: 18px;
     color: white;
     text-decoration: none;
     margin-left: 5.4rem;
     padding: 6px 20px;
-    transition: .5s;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: #A0FEFB;
 }
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background: #A0FEFB;
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.3s ease; 
+}
+
+nav a:hover::after {
+    transform: scaleX(1); 
+}
+
 
 .logo {
     font-size: 24px;
