@@ -16,6 +16,25 @@ body {
     padding-top: 90px;
 }
 
+/*effect when scroll*/
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+section {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
 /*navbar*/
 header {
     font-family: "Orbitron", sans-serif;
@@ -281,4 +300,51 @@ h2{
     font-weight: 300;
     text-align: center;
     padding-top: 40px;
+}
+
+/*rating star*/
+.rating{
+    margin: 0 auto;
+    width: 400px;
+}
+.rating >*{
+    float: right;
+}
+.rating label{
+    height: 40px;
+    width: 20%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.rating label::after{
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing:antialiased;
+    position: absolute;
+    content: "☆";
+    color: #d2d21f;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 80px;
+    -webkit-animation:1s pulse ease;
+    animation: 1s pulse ease;
+<<<<<<< HEAD
+}
+
+/*hover effect*/
+.rating label :hover::after{
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #5e5e5e;
+}
+.rating input{
+    display: none;
+}
+.rating input:checked + label::after,
+.rating input:checked ~ label::after{
+    content: "★";
+    color: #d2d21f;
+    text-shadow: 0 0 20px #d2d21f;
+=======
+>>>>>>> 6915d7cbca5f9fb3917a61a56668dd100bd6fbd5
 }
