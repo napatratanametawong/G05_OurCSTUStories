@@ -141,7 +141,7 @@ nav a:hover::after {
 }
 
 .top-image{
-    position: flex;
+    /* position: absolute; --> display: flex*/
     float: left;
     right: -450px;
     top: 100px;
@@ -323,8 +323,7 @@ nav a:hover::after {
 .mid_container {
     background-color: #041228;
     display: flex;
-    /* padding: 0px; Add some padding for better spacing */
-    min-height: 100%; /* Ensures it covers the viewport height */
+    min-height: 100%;
     justify-content: center;
 
 }
@@ -405,13 +404,13 @@ nav a:hover::after {
 }
 
 .card .more_btn {
-    width: 100px;            /* Keep the button size the same */
+    width: 100px;/* Keep the button size the same */
     height: 100px;
-    position: absolute;      /* Still absolute positioning relative to `.card` */
-    top: 85%;                /* Vertically center it within the `.card` */
-    right: -20px;            /* Move it 70px to the right of `.card` */
-    left: auto;              /* Ensure `left` doesn't interfere */
-    margin: 0;               /* Remove auto centering since it's no longer needed */
+    position: absolute;      
+    top: 85%;                
+    right: -20px;            
+    left: auto;             
+    margin: 0;               
     text-align: center;
     line-height: 60px;
     color: #fff;
