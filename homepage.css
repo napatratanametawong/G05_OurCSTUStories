@@ -380,3 +380,18 @@ h2{
     top: 0;
     background: #ffffff1a;
 }
+/*button*/
+#right,#left {
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: bold;
+    left:50px;
+}
+#right {
+    left: unset;
+    right: 50px;
+}
