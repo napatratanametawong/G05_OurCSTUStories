@@ -330,10 +330,6 @@ h2{
     font-size: 80px;
     -webkit-animation:1s pulse ease;
     animation: 1s pulse ease;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6f308571fb9f1873e5c4e70aa85c5cc2e19eb5ed
 }
 
 /*hover effect*/
@@ -349,10 +345,5 @@ h2{
     content: "★";
     color: #d2d21f;
     text-shadow: 0 0 20px #d2d21f;
-<<<<<<< HEAD
-=======
->>>>>>> 6915d7cbca5f9fb3917a61a56668dd100bd6fbd5
 }
-=======
-}
->>>>>>> 6f308571fb9f1873e5c4e70aa85c5cc2e19eb5ed
+
