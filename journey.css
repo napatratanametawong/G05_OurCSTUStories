@@ -12,6 +12,7 @@
 body {
     min-height: 100vh;
     background-color: #041228;
+    overflow-x: hidden;
 }
 
 header {
@@ -104,6 +105,166 @@ nav a:hover::after {
     display: none;
 }
 
+.top-container{
+    margin: 200px 0 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topic{
+    height: fit-content;
+}
+
+.topic h1{
+    font-size: 6.25rem;
+    font-family: "Audiowide", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.topic h2{
+    font-size: 8.125rem;
+    font-family: "Audiowide", sans-serif;
+    color: #A0FEFB;
+    text-transform: uppercase;
+}
+
+.topic p{
+    font-size: 20px;
+    color: #54f271;
+    font-family: "Mitr",sans-serif;
+    border:3px solid #54f271;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+
+.top-image{
+    position: absolute;
+    right: -450px;
+    top: 100px;
+}
+
+.top-image img{
+    width: 1400px;
+}
+
+
+@media (max-width:1440px){
+    .top-image img{
+        width: 1300px;
+    }
+}
+
+@media (max-width:1380px){
+    .top-image img{
+        width: 1200px;
+    }
+}
+
+@media (max-width:1300px){
+    .top-image img{
+        width: 1000px;
+    }
+
+    .topic h1{
+        font-size: 5.25rem;
+    }
+    
+    .topic h2{
+        font-size: 7.125rem;
+    }
+    
+    .topic p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1040px){
+    .top-image img{
+        width: 950px;
+    }
+
+    .topic h1{
+        font-size: 4.25rem;
+    }
+    
+    .topic h2{
+        font-size: 6.125rem;
+    }
+    
+    .topic p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .top-image img{
+        width: 850px;
+    }
+
+    .topic h1{
+        font-size: 4.25rem;
+    }
+
+    .topic h2{
+        font-size: 5rem;
+    }
+
+    .topic p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    .top-image img{
+        width: 800px;
+    }
+}
+
+@media (max-width: 770px) {
+    .top-image img{
+        display: none;
+    }
+
+    .topic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-container{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .topic h1{
+        font-size: 3.25rem;
+    }
+
+    .topic h2{
+        font-size: 4.5rem;
+    }
+
+    .topic p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .topic h1{
+        font-size: 2.25rem;
+    }
+
+    .topic h2{
+        font-size: 3.5rem;
+    }
+
+    .topic p{
+        font-size: 10px;
+    }
+}
+
 
 /*tablet*/
 @media (max-width: 992px) {
@@ -153,4 +314,3 @@ nav a:hover::after {
         height: 12.0rem;
     }
 }
-
