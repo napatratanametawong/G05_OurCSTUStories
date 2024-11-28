@@ -103,58 +103,52 @@ nav a:hover::after {
     display: none;
 }
 
+body {
+    min-height: 100vh;
+    background-color: #041228;
+    background: #041228 url(resource/future.png) no-repeat center center;
+    background-size: 80% auto;
+    background-position: right -200px top 100px;
+    padding-top: 90px;
+    padding-left: 15%;  
+}
+
 .content {
     display: flex;
-    align-items: center;
-    justify-content: center; 
-    padding: 2rem;
-    margin-top: 1%;
-    position: relative;  
-}
-
-.text-content {
-    display: flex;
     flex-direction: column;
-    position: absolute; 
-    top: 53%; 
-    transform: translate(-70%, -100%); 
-    z-index: 10;
+    justify-content: center;
+    height: calc(80vh - 140px);
+    padding-left: 3%;
 }
 
-.header-image {
-    width: 80%;
-    height: auto;
-    object-fit: cover;  
-    position: relative;
-    margin-top: 3%;
-    left: 11%;
-}
 
 .main-topic {
-    font-family: 'Audiowide', sans-serif;
-    font-size: 100px;
-    font-weight: 400;
-    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 100px; 
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .topic {
-    font-family: 'Audiowide', sans-serif;
-    font-size: 130px;
-    font-weight: 400;
+    font-family: "Orbitron", sans-serif; 
+    font-size: 130px; 
     color: #A0FEFB;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .sub-title {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Mitr", serif; 
     font-size: 20px;
-    font-weight: 400;
-    border: 3px solid #54F271;  
-    padding: 10px;  
-    border-radius: 10px;     
-    font-size: 20px;    
-    display: inline-block; 
+    font-weight: 300;
+    display: inline-block;
     color: #54F271;
+    border: 2px solid #54F271;
+    border-radius: 30px;
+    padding: 5px 20px;
 }
+
 
 /*tablet*/
 @media (max-width: 992px) {
