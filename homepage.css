@@ -50,19 +50,37 @@ header::before{
     z-index: -1;
 }
 
-
 nav a {
     font-size: 18px;
     color: white;
     text-decoration: none;
     margin-left: 5.4rem;
     padding: 6px 20px;
-    transition: .5s;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: #A0FEFB;
 }
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background: #A0FEFB;
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.3s ease; 
+}
+
+nav a:hover::after {
+    transform: scaleX(1); 
+}
+
 
 .logo {
     font-size: 24px;
@@ -153,6 +171,9 @@ nav a:hover {
         gap: 250px;
     }
     
+    .gradient-box {
+        top: 35%;
+    }
 }
 
 /*Mobile*/
@@ -208,19 +229,20 @@ nav a:hover {
         gap: 100px;
     }
 
-   
-}
+    .gradient-box {
+        top: 19%;
+    }
 
-/*members*/
-p.member-intro {
-    padding-left: 10%;
-    padding-right: 10%;
-    color: #fff;
-    font-size: 24px;
-    font-family: "Mitr", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+    h2 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    
+   
 }
 
 /*guest book*/
@@ -239,6 +261,7 @@ h2{
     color: white;
     font-size: 24px;
     font-family: "Mitr",serif;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -248,4 +271,14 @@ h2{
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
     width: 90%;
     margin: 0 auto;
+}
+
+.subtitle2{
+    color: #54F271;
+    font-size: 24px;
+    font-family: "Mitr",serif;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 40px;
 }
