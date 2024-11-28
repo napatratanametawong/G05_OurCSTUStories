@@ -141,7 +141,7 @@ nav a:hover::after {
 }
 
 .top-image{
-    /* position: absolute; --> display: flex*/
+    /* position: absolute; */
     float: left;
     right: -450px;
     top: 100px;
@@ -478,3 +478,108 @@ nav a:hover::after {
 
 
 /* Middle part */
+
+/* Responsive for Middle part */
+
+@media (max-width:1440px){
+
+}
+
+@media (max-width:1380px){
+
+}
+
+@media (max-width:1300px){
+
+}
+
+@media (max-width:1040px){
+
+}
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 800px) {
+}
+@media (max-width: 770px) {
+
+    .mid_container {
+        margin-top: 100px;
+    }
+
+    .title {
+        .main_title {
+            font-size: 20px;
+        }
+    
+        .sub_title {
+            font-size: 15px;
+        }
+    
+        border-radius: 20px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        padding-top: 120px;
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 400px;
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .mid_container {
+        margin-top: 100px;
+    }
+
+    .title {
+        .main_title {
+            font-size: 15px;
+        }
+    
+        .sub_title {
+            font-size: 12px;
+        }
+    
+        border-radius: 20px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        padding-top: 120px;
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .card {
+        width: 400px;
+        margin: 20px
+    }
+}
+
+
+/*tablet*/
+@media (max-width: 992px) {
+
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+
+}
+
+/* Responsive for Middle part */
