@@ -347,3 +347,18 @@ h2{
     text-shadow: 0 0 20px #d2d21f;
 }
 
+/*members slide*/
+
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.slide-wrapper {
+    position: relative;
+    width: 100%;
+    height:  370px;
+    overflow: hidden;
+}
