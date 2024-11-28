@@ -106,7 +106,7 @@ nav a:hover::after {
 }
 
 .top-container{
-    margin: 200px 0 0 70px;
+    margin: 200px 0 50px 70px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -149,6 +149,26 @@ nav a:hover::after {
     width: 1400px;
 }
 
+.middle-container{
+    margin-top: 500px;
+}
+
+.bottom-container{
+    width: 100%;
+    height: 250px;
+    background-image: url("./resource/journey-footer.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.bottom-container .quote{
+    font-family: "Orbitron",sans-serif;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+}
 
 @media (max-width:1440px){
     .top-image img{
@@ -178,6 +198,10 @@ nav a:hover::after {
     .topic p{
         font-size: 18px;
     }
+
+    .bottom-container .quote{
+        font-size: 28px;
+    }
 }
 
 @media (max-width:1040px){
@@ -196,6 +220,10 @@ nav a:hover::after {
     .topic p{
         font-size: 16px;
     }
+
+    .bottom-container .quote{
+        font-size: 24px;
+    }    
 }
 
 @media (max-width: 900px) {
@@ -213,6 +241,15 @@ nav a:hover::after {
 
     .topic p{
         font-size: 14px;
+    }
+
+    .bottom-container .quote{
+        font-size: 20px;
+    }  
+
+    .bottom-container{
+        height: 200px;
+        margin-bottom: 100px;
     }
 }
 
@@ -251,20 +288,16 @@ nav a:hover::after {
     }
 }
 
-@media (max-width: 500px) {
-    .topic h1{
-        font-size: 2.25rem;
-    }
+@media (max-width: 710px) {
+    .bottom-container .quote{
+        font-size: 16px;
+    }  
 
-    .topic h2{
-        font-size: 3.5rem;
-    }
-
-    .topic p{
-        font-size: 10px;
+    .bottom-container{
+        height: 150px;
+        margin-bottom: 70px;
     }
 }
-
 
 /*tablet*/
 @media (max-width: 992px) {
@@ -312,5 +345,39 @@ nav a:hover::after {
 
     #check:checked~nav {
         height: 12.0rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .bottom-container .quote{
+        font-size: 12px;
+    }  
+}
+
+@media (max-width: 500px) {
+    .topic h1{
+        font-size: 2.25rem;
+    }
+
+    .topic h2{
+        font-size: 3.5rem;
+    }
+
+    .topic p{
+        font-size: 10px;
+    }
+
+    .bottom-container{
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 410px) {
+    .bottom-container .quote{
+        font-size: 10px;
+    }  
+
+    .bottom-container{
+        height: 110px;
     }
 }
