@@ -481,7 +481,7 @@ nav a:hover::after {
 
 /* Responsive for Middle part */
 
-@media (max-width:1699px) {
+@media (max-width:1700px) {
 
     .title {
         .main_title {
@@ -501,22 +501,61 @@ nav a:hover::after {
         justify-content: center;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        padding-top: 80px;
     }
+
+    .card {
+        width: 350px;
+        margin-top: 15px;
+        height: 280px;
+    }
+
+    .year p {
+        font-size: 15px;
+    }
+
+    .middle_image {
+        height: 200px;
+    }
+
+    .card .more_btn {
+        line-height: 40px;
+        right: -30px;
+    }
+
+    .ri-add-large-line{
+        color: white;
+        font-size: 15px;
+    }
+
+    .more_text {
+        padding: 15px;
+    }
+
+    #head {
+        font-size: 16px;
+    }
+
+    #body {
+        font-size: 12px;
+    }
+
+
     
 }
 
-@media (max-width:1440px){
+@media (max-width:1500px){
 
     .title {
         .main_title {
-            font-size: 28px;
+            font-size: 22px;
         }
     
         .sub_title {
             font-size: 20px;
         }
 
-        margin-top: -70px;
+        margin-top: -65px;
     
     }
 
@@ -525,11 +564,49 @@ nav a:hover::after {
         justify-content: center;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        padding-top: 80px;
     }
+
+    .card {
+        width: 300px;
+        margin-top: 15px;
+        height: 250px;
+    }
+
+    .year p {
+        font-size: 15px;
+    }
+
+    .middle_image {
+        height: 180px;
+    }
+
+    .card .more_btn {
+        line-height: 40px;
+        right: -30px;
+    }
+
+    .ri-add-large-line{
+        color: white;
+        font-size: 15px;
+    }
+
+    .more_text {
+        padding: 15px;
+    }
+
+    #head {
+        font-size: 16px;
+    }
+
+    #body {
+        font-size: 12px;
+    }
+
 
 }
 
-@media (max-width:1380px){
+/* @media (max-width:1380px){
 
     .title {
         .main_title {
@@ -575,9 +652,9 @@ nav a:hover::after {
         border-top-right-radius: 8px;
     }
 
-}
+} */
 
-@media (max-width:1040px){
+/* @media (max-width:1040px){
 
     .title {
         .main_title {
@@ -597,9 +674,9 @@ nav a:hover::after {
         border-top-right-radius: 8px;
     }
 
-}
+} */
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
     .title {
         .main_title {
@@ -609,6 +686,8 @@ nav a:hover::after {
         .sub_title {
             font-size: 16px;
         }
+
+        margin-top: 25px;
     
     }
 
@@ -617,11 +696,48 @@ nav a:hover::after {
         justify-content: center;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        padding-top: 150px;
+    }
+
+    .card {
+        width: 210px;
+        margin-top: 15px;
+        height: 250px;
+    }
+
+    .year p {
+        font-size: 15px;
+    }
+
+    .middle_image {
+        height: 140px;
+    }
+
+    .card .more_btn {
+        line-height: 40px;
+        right: -30px;
+    }
+
+    .ri-add-large-line{
+        color: white;
+        font-size: 15px;
+    }
+
+    .more_text {
+        padding: 10px;
+    }
+
+    #head {
+        font-size: 16px;
+    }
+
+    #body {
+        font-size: 12px;
     }
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 821px) {
 
     .title {
         .main_title {
@@ -638,6 +754,8 @@ nav a:hover::after {
         width: 90%;
         justify-content: center;
     }
+
+    
 }
 @media (max-width: 770px) {
 
@@ -664,12 +782,20 @@ nav a:hover::after {
         width: 100%;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        justify-content: center;
     }
 
     .card {
-        width: 400px;
+        width: 350px;
         margin-top: 15px;
+        height: 330px;
+    }
+
+    .year p {
+        font-size: 22px;
+    }
+
+    .middle_image {
+        height: 220px;
     }
 }
 
@@ -702,9 +828,19 @@ nav a:hover::after {
     }
 
     .card {
-        width: 400px;
-        margin: 20px
+        width: 350px;
+        margin-top: 15px;
+        height: 330px;
     }
+
+    .year p {
+        font-size: 22px;
+    }
+
+    .middle_image {
+        height: 220px;
+    }
+    
 }
 
 /* Responsive for Middle part */
