@@ -457,3 +457,18 @@ form .detailform .form-group{
     color: white;
     margin-bottom: 20px;
 }
+
+/*style tag select */
+.detailform .form-group select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #A0FEFB;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: white;
+}
