@@ -481,27 +481,163 @@ nav a:hover::after {
 
 /* Responsive for Middle part */
 
+@media (max-width:1699px) {
+
+    .title {
+        .main_title {
+            font-size: 28px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+
+        margin-top: -70px;
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+}
+
 @media (max-width:1440px){
+
+    .title {
+        .main_title {
+            font-size: 28px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+
+        margin-top: -70px;
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
 
 }
 
 @media (max-width:1380px){
 
+    .title {
+        .main_title {
+            font-size: 28px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+
+        margin-top: -70px;
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
 }
 
 @media (max-width:1300px){
+
+    .title {
+        .main_title {
+            font-size: 28px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+
+        margin-top: -70px;
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
 
 }
 
 @media (max-width:1040px){
 
+    .title {
+        .main_title {
+            font-size: 25px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
 }
 
 @media (max-width: 900px) {
 
+    .title {
+        .main_title {
+            font-size: 22px;
+        }
+    
+        .sub_title {
+            font-size: 16px;
+        }
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
 }
 
 @media (max-width: 800px) {
+
+    .title {
+        .main_title {
+            font-size: 22px;
+        }
+    
+        .sub_title {
+            font-size: 16px;
+        }
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+    }
 }
 @media (max-width: 770px) {
 
@@ -569,17 +705,6 @@ nav a:hover::after {
         width: 400px;
         margin: 20px
     }
-}
-
-
-/*tablet*/
-@media (max-width: 992px) {
-
-}
-
-/*Mobile*/
-@media (max-width: 768px) {
-
 }
 
 /* Responsive for Middle part */
