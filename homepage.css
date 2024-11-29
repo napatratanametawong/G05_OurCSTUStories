@@ -540,4 +540,9 @@ button{
     font-family: "Mitr",serif;
     margin: 0px 7px;
     font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(45deg,#A0FEFB,#4315D7,#54F271);
+    color: white;
 }
