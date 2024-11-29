@@ -428,3 +428,17 @@ form .detailform .form-group{
     padding: 0px 10px;
     position: relative;
 }
+
+/*style text label*/
+.detailform .form-group label{
+    display: block;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    transform: translateY(-250%);
+    padding-left: 20px;
+    padding-bottom: 2px;
+    pointer-events: none;
+    font-family: "Mitr",serif;
+    font-style: normal;
+}
