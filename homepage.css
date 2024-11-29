@@ -290,7 +290,7 @@ h2{
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
     width: 90%;
     margin: 0 auto;
-    height: 500px;
+    height: 950px;
 }
 
 .subtitle2{
@@ -347,3 +347,202 @@ h2{
     text-shadow: 0 0 20px #d2d21f;
 }
 
+
+
+
+
+/*members slide*/
+
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.slide-wrapper {
+    position: relative;
+    width: 100%;
+    height:  370px;
+    overflow: hidden;
+}
+/*card*/
+.card-item {
+    position: absolute;
+    width: 225px;
+    height: 320px;
+    text-align: justify;
+    border: 1px solid #fff;
+    border-radius: 5%;
+    padding: 5px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+    background: #ffffff1a;
+}
+/*button*/
+#right,#left {
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: bold;
+    left:50px;
+}
+#right {
+    left: unset;
+    right: 50px;
+}
+/*image style*/
+.card-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 10%;
+}
+/*font style*/
+.card-item .name {
+    font-size: 48px;
+    font-family: "Orbitron",sans-serif;
+    color: #A0FEFB;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*form element guest book*/
+/*set position of field*/
+.container form .detailform{
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: transparent;
+    margin: 120px 200px;
+}
+
+form .detailform .form-group{
+    width: calc(100% /2 -20px);
+    margin: 0px;
+    width: 50%;
+    padding: 0px 10px;
+    position: relative;
+}
+
+/*style text label*/
+.detailform .form-group label{
+    display: block;
+    font-weight: 400;
+    color: white;
+    transform: translateY(-205%);
+    padding-left: 20px;
+    padding-bottom: 2px;
+    pointer-events: none;
+    font-family: "Mitr",serif;
+    font-style: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+/*style input feild*/
+.detailform .form-group input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #A0FEFB;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 20px;
+    font-family: "Mitr",serif;
+}
+/*animate input field*/
+.form-group input:focus~label,
+.form-group input:valid~label{
+    top: -25px;
+    font-size: 12px;
+    background-color: #1B273A;
+}
+
+/*dropdown*/
+.detailform .form-group select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #A0FEFB;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: white;
+    font-family: "Mitr",serif;
+}
+select option{
+    background-color: #33393f;
+}
+
+/*style comment*/
+.form-comment {
+    padding-left: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.detailform .form-comment label{
+    display: block;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    transform: translateY(-900%);
+    padding-left: 10px;
+    padding-bottom: 2px;
+    pointer-events: none;
+    font-family: "Mitr",serif;
+}
+
+.form-comment textarea{
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 945px;
+    height: 250px;
+    border-radius: 5px;
+    border: 2px solid #A0FEFB;
+    background-color: transparent;
+    color: white;
+    font-family: "Mitr",serif;
+    font-size: 16px;
+    outline: none;
+}
+/*animate comment field*/
+.form-comment textarea:focus~label,
+.form-comment textarea:valid~label{
+    top: 740px;
+    font-size: 12px;
+    background-color: #1B273A;
+}
+
+/*submit button*/
+button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #A0FEFB;
+    font-family: "Mitr",serif;
+    margin: 0px 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(45deg,#A0FEFB,#4315D7,#54F271);
+    color: white;
+}

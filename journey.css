@@ -112,7 +112,9 @@ nav a:hover::after {
 }
 
 .topic{
+    margin-top: 120px;
     height: fit-content;
+    width: 50%;
 }
 
 .topic h1{
@@ -140,9 +142,9 @@ nav a:hover::after {
 }
 
 .top-image{
-    position: absolute;
-    right: -450px;
-    top: 100px;
+    /* position: absolute; */
+    float: left;
+    width: 50%;
 }
 
 .top-image img{
@@ -227,8 +229,22 @@ nav a:hover::after {
 }
 
 @media (max-width: 900px) {
-    .top-image img{
-        width: 850px;
+    .top-image{
+        display: none;
+    }
+
+    .topic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-container{
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 100px;
+        margin-bottom: 200px;
     }
 
     .topic h1{
@@ -260,7 +276,7 @@ nav a:hover::after {
 }
 
 @media (max-width: 770px) {
-    .top-image img{
+    .top-image{
         display: none;
     }
 
@@ -268,6 +284,7 @@ nav a:hover::after {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .top-container{
@@ -348,10 +365,16 @@ nav a:hover::after {
     }
 }
 
+@media (max-width:620px) {
+    .topic p{
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 560px) {
     .bottom-container .quote{
         font-size: 12px;
-    }  
+    } 
 }
 
 @media (max-width: 500px) {
@@ -361,10 +384,6 @@ nav a:hover::after {
 
     .topic h2{
         font-size: 3.5rem;
-    }
-
-    .topic p{
-        font-size: 10px;
     }
 
     .bottom-container{
@@ -381,3 +400,530 @@ nav a:hover::after {
         height: 110px;
     }
 }
+/* Middle part */
+
+.mid_container {
+    background-color: #041228;
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    
+    .main_title {
+        font-size: 36px;
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        color: white;
+    }
+
+    .sub_title {
+        font-size: 24px;
+        font-family: "Mitr", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #54F271;
+    }
+
+    border: solid 0.5px;
+    border-radius: 20px;
+    border-color: white;
+    background-color: #666a7686;
+    padding: 30px;
+    z-index: 1;
+    margin-top: -90px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color:#5f5c5c60;
+}
+
+.middle_image {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+}
+
+.card{
+    /* border: solid; */
+    position: relative;
+    width: 520px;
+    height: 380px;
+    border-radius: 8px;
+    margin: 80px;
+    overflow: hidden;
+    background: linear-gradient(to right, #9A0E9A, #160F89);
+    box-shadow: 8px 8px #4E5668;
+}
+
+.card .text {
+    padding: 15px;
+    
+}
+
+.card .text .year {
+    font-size: 30px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+
+    .year_name {
+        padding-left: 15px;
+    }
+}
+
+.card .more_btn {
+    width: 100px;/* Keep the button size the same */
+    height: 100px;
+    position: absolute;      
+    top: 85%;                
+    right: -20px;            
+    left: auto;             
+    margin: 0;               
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .more_text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ri-add-large-line{
+    color: white;
+    font-size: 25px;
+}
+
+.more_text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #A0FEFB;
+    padding: 30px;
+    overflow-y: auto;
+    transition: all ease 0.7s;
+}
+
+
+.more_text::-webkit-scrollbar {
+    width: 7px;
+    background-color: #A0FEFB;
+    
+}
+
+.more_text::-webkit-scrollbar-thumb{
+    width: 7px;
+    background-color: rgb(102, 100, 100);
+    border-radius: 20px;
+}
+
+
+
+#head {
+    font-size: 32px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+#body {
+    font-size: 18px;
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+
+/* Middle part */
+
+/* Responsive for Middle part */
+
+@media (max-width:1700px) {
+
+    .title {
+        .main_title {
+            font-size: 28px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+
+        margin-top: -70px;
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 80px;
+    }
+
+    .card {
+        width: 350px;
+        margin-top: 15px;
+        height: 280px;
+    }
+
+    .year p {
+        font-size: 15px;
+    }
+
+    .middle_image {
+        height: 200px;
+    }
+
+    .card .more_btn {
+        line-height: 40px;
+        right: -30px;
+    }
+
+    .ri-add-large-line{
+        color: white;
+        font-size: 15px;
+    }
+
+    .more_text {
+        padding: 15px;
+    }
+
+    #head {
+        font-size: 16px;
+    }
+
+    #body {
+        font-size: 12px;
+    }
+
+
+    
+}
+
+@media (max-width:1500px){
+
+    .title {
+        .main_title {
+            font-size: 22px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+
+        margin-top: -65px;
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 80px;
+    }
+
+    .card {
+        width: 300px;
+        margin-top: 15px;
+        height: 250px;
+    }
+
+    .year p {
+        font-size: 15px;
+    }
+
+    .middle_image {
+        height: 180px;
+    }
+
+    .card .more_btn {
+        line-height: 40px;
+        right: -30px;
+    }
+
+    .ri-add-large-line{
+        color: white;
+        font-size: 15px;
+    }
+
+    .more_text {
+        padding: 15px;
+    }
+
+    #head {
+        font-size: 16px;
+    }
+
+    #body {
+        font-size: 12px;
+    }
+
+
+}
+
+/* @media (max-width:1380px){
+
+    .title {
+        .main_title {
+            font-size: 28px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+
+        margin-top: -70px;
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+}
+
+@media (max-width:1300px){
+
+    .title {
+        .main_title {
+            font-size: 28px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+
+        margin-top: -70px;
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+} */
+
+/* @media (max-width:1040px){
+
+    .title {
+        .main_title {
+            font-size: 25px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+        }
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+} */
+
+@media (max-width: 1200px) {
+
+    .title {
+        .main_title {
+            font-size: 22px;
+        }
+    
+        .sub_title {
+            font-size: 16px;
+        }
+
+        margin-top: 25px;
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 150px;
+        margin: 0px
+    }
+
+    .card {
+        width: 210px;
+        margin-top: 15px;
+        height: 250px;
+    }
+
+    .year p {
+        font-size: 15px;
+    }
+
+    .middle_image {
+        height: 140px;
+    }
+
+    .card .more_btn {
+        line-height: 40px;
+        right: -30px;
+    }
+
+    .ri-add-large-line{
+        color: white;
+        font-size: 15px;
+    }
+
+    .more_text {
+        padding: 10px;
+    }
+
+    #head {
+        font-size: 16px;
+    }
+
+    #body {
+        font-size: 12px;
+    }
+
+}
+
+/* @media (max-width: 821px) {
+
+    .title {
+        .main_title {
+            font-size: 22px;
+        }
+    
+        .sub_title {
+            font-size: 16px;
+        }
+    
+    }
+
+    .cards {
+        width: 90%;
+        justify-content: center;
+    }
+
+    
+} */
+@media (max-width: 821px) {
+
+    .mid_container {
+        margin-top: 100px;
+    }
+
+    .title {
+        .main_title {
+            font-size: 20px;
+        }
+    
+        .sub_title {
+            font-size: 15px;
+        }
+    
+        border-radius: 20px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        padding-top: 120px;
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .card {
+        width: 350px;
+        margin-top: 15px;
+        height: 330px;
+    }
+
+    .year p {
+        font-size: 22px;
+    }
+
+    .middle_image {
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .mid_container {
+        margin-top: 100px;
+    }
+
+    .title {
+        .main_title {
+            font-size: 15px;
+        }
+    
+        .sub_title {
+            font-size: 12px;
+        }
+    
+        border-radius: 20px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        padding-top: 120px;
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .card {
+        width: 350px;
+        margin-top: 15px;
+        height: 330px;
+    }
+
+    .year p {
+        font-size: 22px;
+    }
+
+    .middle_image {
+        height: 220px;
+    }
+    
+}
+
+/* Responsive for Middle part */
