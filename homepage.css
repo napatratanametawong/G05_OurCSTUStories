@@ -442,3 +442,18 @@ form .detailform .form-group{
     font-family: "Mitr",serif;
     font-style: normal;
 }
+
+/*style input feild*/
+.detailform .form-group input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #A0FEFB;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 20px;
+}
