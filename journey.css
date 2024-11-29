@@ -109,6 +109,7 @@ nav a:hover::after {
     margin: 200px 0 50px 70px;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .topic{
