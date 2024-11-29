@@ -360,7 +360,7 @@ nav a:hover::after {
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 80%;
@@ -570,7 +570,7 @@ nav a:hover::after {
     .card {
         width: 300px;
         margin-top: 15px;
-        height: 250px;
+        height: 270px;
     }
 
     .year p {
@@ -697,11 +697,11 @@ nav a:hover::after {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         padding-top: 150px;
-        margin: 0px
+        margin: 0px;
     }
 
     .card {
-        width: 210px;
+        width: 250px;
         margin-top: 15px;
         height: 250px;
     }
@@ -711,7 +711,7 @@ nav a:hover::after {
     }
 
     .middle_image {
-        height: 140px;
+        height: 150px;
     }
 
     .card .more_btn {
@@ -758,7 +758,7 @@ nav a:hover::after {
 
     
 } */
-@media (max-width: 821px) {
+@media (max-width: 915px) {
 
     .mid_container {
         margin-top: 100px;
@@ -792,7 +792,7 @@ nav a:hover::after {
     }
 
     .year p {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .middle_image {
@@ -835,7 +835,7 @@ nav a:hover::after {
     }
 
     .year p {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .middle_image {
