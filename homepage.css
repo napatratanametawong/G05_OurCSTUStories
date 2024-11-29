@@ -383,6 +383,12 @@ h2{
     display: flex;
     flex-wrap: wrap;
 }
+.card-item .members-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
 /*button*/
 #right,#left {
     position: absolute;
