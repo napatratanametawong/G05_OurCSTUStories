@@ -445,6 +445,7 @@ form .detailform .form-group{
     align-items: center;
     overflow: hidden;
     white-space: nowrap;
+    position: relative;
 }
 
 /*style input feild*/
@@ -461,6 +462,13 @@ form .detailform .form-group{
     color: white;
     margin-bottom: 20px;
     font-family: "Mitr",serif;
+}
+/*animate input field*/
+.form-group input:focus~label,
+.form-group input:valid~label{
+    top: -25px;
+    font-size: 12px;
+    background-color: #1B273A;
 }
 
 /*dropdown*/
@@ -514,6 +522,13 @@ select option{
     font-family: "Mitr",serif;
     font-size: 16px;
     outline: none;
+}
+/*animate comment field*/
+.form-comment textarea:focus~label,
+.form-comment textarea:valid~label{
+    top: 815px;
+    font-size: 12px;
+    background-color: #1B273A;
 }
 
 /*submit button*/
