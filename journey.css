@@ -697,6 +697,7 @@ nav a:hover::after {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         padding-top: 150px;
+        margin: 0px
     }
 
     .card {
@@ -737,7 +738,7 @@ nav a:hover::after {
 
 }
 
-@media (max-width: 821px) {
+/* @media (max-width: 821px) {
 
     .title {
         .main_title {
@@ -756,8 +757,8 @@ nav a:hover::after {
     }
 
     
-}
-@media (max-width: 770px) {
+} */
+@media (max-width: 821px) {
 
     .mid_container {
         margin-top: 100px;
