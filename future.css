@@ -416,6 +416,25 @@ body {
         margin-left: -100px;
   }
 
+  .quote-container {
+    background: #1e1e2f; /* พื้นหลังสีเข้ม */
+    border: 3px solid white; /* ขอบสีขาว */
+    border-radius: 15px; 
+    padding: 80px; /* ช่องว่างภายใน */
+    width: 80%; /* ความกว้าง 80% ของหน้าจอ */
+    margin: 200px auto; /* จัดกลางหน้าจอ */
+    background: url('resource/future-footer.jpg') no-repeat center center;
+    background-size: cover; /* เพื่อให้ภาพขยายเต็มขอบเขต */
+    background-position: center center; /* วางภาพไว้ที่กลางกรอบ */
+  }
+  
+  .quote-text {
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 36px;
+    color: white; /* สีตัวอักษรขาว */
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+  }
+
 /*tablet*/
 @media (max-width: 992px) {
     header {
