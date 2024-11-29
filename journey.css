@@ -160,10 +160,12 @@ nav a:hover::after {
     height: 250px;
     background-image: url("./resource/journey-footer.jpg");
     background-size: cover;
+    background-position: 28% 28%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 130px;
+    margin-top: 130px;
 }
 
 .bottom-container .quote{
