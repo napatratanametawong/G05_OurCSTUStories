@@ -183,6 +183,7 @@ body {
   
 .box-left {
     flex: 1;
+    transition: flex 0.5s ease;
     background-color: #5a5f5f;
     padding: 15px;
     display: flex;
@@ -260,6 +261,17 @@ body {
     margin-left: 5%;
     
 }
+
+#future-maker-text {
+    opacity: 1; /* ข้อความมองเห็นชัดเจน */
+    transition: opacity 0s ease, transform 1s ease; /* เพิ่มการเลื่อน */
+}
+
+#future-maker-text.hidden {
+    opacity: 0; /* ข้อความหายไป */
+    transform: translateX(-20px); /* เลื่อนข้อความไปทางซ้าย */
+}
+
 
 .future-maker-caption {
     font-family: "Orbitron", sans-serif;
