@@ -472,3 +472,36 @@ form .detailform .form-group{
     background-color: transparent;
     color: white;
 }
+
+/*style comment*/
+.form-comment {
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.detailform .form-comment label{
+    display: block;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    transform: translateY(-1200%);
+    padding-left: 10px;
+    padding-bottom: 2px;
+    pointer-events: none;
+    font-family: "Mitr",serif;
+}
+
+.form-comment textarea{
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 1245px;
+    height: 250px;
+    border-radius: 5px;
+    border: 2px solid #A0FEFB;
+    background-color: transparent;
+    color: white;
+    font-family: "Mitr",serif;
+}
