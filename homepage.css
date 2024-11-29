@@ -290,7 +290,7 @@ h2{
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
     width: 90%;
     margin: 0 auto;
-    height: 900px;
+    height: 950px;
 }
 
 .subtitle2{
@@ -418,7 +418,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: transparent;
-    margin: 120px 50px;
+    margin: 120px 200px;
 }
 
 form .detailform .form-group{
@@ -513,7 +513,7 @@ select option{
 .form-comment textarea{
     padding-top: 30px;
     padding-left: 30px;
-    width: 1245px;
+    width: 945px;
     height: 250px;
     border-radius: 5px;
     border: 2px solid #A0FEFB;
@@ -526,7 +526,7 @@ select option{
 /*animate comment field*/
 .form-comment textarea:focus~label,
 .form-comment textarea:valid~label{
-    top: 815px;
+    top: 740px;
     font-size: 12px;
     background-color: #1B273A;
 }
@@ -534,9 +534,10 @@ select option{
 /*submit button*/
 button{
     width: 100%;
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
     background-color: #A0FEFB;
     font-family: "Mitr",serif;
-    margin: 0px 12px;
+    margin: 0px 7px;
+    font-size: 16px;
 }
