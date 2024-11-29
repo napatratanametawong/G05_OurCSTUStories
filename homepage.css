@@ -383,12 +383,10 @@ h2{
 /*button*/
 #right,#left {
     position: absolute;
-    top: 40%;
+    top: 50%;
     color: #fff;
     background-color: transparent;
     border: 1px solid #fff;
-    font-size: 20px;
-    font-weight: bold;
     left:50px;
     border-radius: 50%;
     width: 50px;
@@ -397,6 +395,10 @@ h2{
 #right {
     left: unset;
     right: 50px;
+}
+button .material-symbols-outlined{
+    display: flex;
+    justify-content: center;
 }
 /*image style*/
 .card-item img {
