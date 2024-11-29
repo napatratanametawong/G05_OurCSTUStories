@@ -409,3 +409,22 @@ h2{
     font-weight: 700;
     font-style: normal;
 }
+
+/*form element guest book*/
+/*set position of field*/
+.container form .detailform{
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: transparent;
+    margin: 120px 50px;
+}
+
+form .detailform .form-group{
+    width: calc(100% /2 -20px);
+    margin: 0px;
+    width: 50%;
+    padding: 0px 10px;
+    position: relative;
+}
