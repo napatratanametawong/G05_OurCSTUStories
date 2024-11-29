@@ -434,7 +434,6 @@ form .detailform .form-group{
     display: block;
     font-weight: 400;
     color: white;
-    position: absolute;
     transform: translateY(-205%);
     padding-left: 20px;
     padding-bottom: 2px;
@@ -442,6 +441,10 @@ form .detailform .form-group{
     font-family: "Mitr",serif;
     font-style: normal;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /*style input feild*/
@@ -460,7 +463,7 @@ form .detailform .form-group{
     font-family: "Mitr",serif;
 }
 
-/*style tag select */
+/*dropdown*/
 .detailform .form-group select{
     height: 45px;
     width: 100%;
@@ -481,7 +484,6 @@ select option{
 
 /*style comment*/
 .form-comment {
-    outline: none;
     padding-left: 10px;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -511,6 +513,7 @@ select option{
     color: white;
     font-family: "Mitr",serif;
     font-size: 16px;
+    outline: none;
 }
 
 /*submit button*/
