@@ -383,11 +383,18 @@ h2{
     display: flex;
     flex-wrap: wrap;
 }
+/*image style*/
 .card-item .members-image {
     width: 100%;
     display: flex;
     justify-content: center;
 
+}
+.members-image img {
+    border-radius: 5%;
+    width: 90%;
+    height: 280px;
+    object-fit: cover;
 }
 /*button*/
 #right,#left {
@@ -408,12 +415,6 @@ h2{
 button .material-symbols-outlined{
     display: flex;
     justify-content: center;
-}
-/*image style*/
-.card-item img {
-    width: 100px;
-    height: auto;
-    border-radius: 10%;
 }
 /*font style*/
 .card-item .name {
