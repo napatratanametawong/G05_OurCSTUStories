@@ -177,7 +177,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 3px solid #ffffff;
-    background-color: #c2c2c2;
+    background-color: #cdcdcd;
     border-radius: 15px;
 }
   
@@ -222,13 +222,12 @@ body {
     height: 250px;
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   
   #toggle-btn {
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
     border: none;
     background: none;
@@ -242,7 +241,8 @@ body {
   }
   
   #toggle-btn i {
-    font-size: 36px; /* ขนาดของไอคอน */
+    font-size: 50px; /* ขนาดของไอคอน */
+  
   }
   
   #toggle-btn span {
@@ -251,6 +251,39 @@ body {
     color: #54F271;
     transition: opacity 0.3s ease; /* ทำให้การซ่อน/แสดงข้อความลื่นไหล */
   }
+
+  /* เพิ่มสไตล์สำหรับกล่องข้อความและรูปภาพ */
+.future-maker-container {
+    display: none; /* ซ่อนเมื่อไม่ได้คลิกปุ่ม */
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5%;
+    
+}
+
+.future-maker-caption {
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้ตัวอักษร */
+    color: #54F271;
+    margin-bottom: 15px;
+}
+
+.future-maker-images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+.future-person {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
 
 .background-container {
     position: absolute;
