@@ -754,4 +754,10 @@ strong{
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
+    .user-comment{
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 12px;
+    }
 }
