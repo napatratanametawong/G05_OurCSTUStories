@@ -863,7 +863,7 @@ body {
     }
 }
 
-@media (min-width: 993px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     body {
         min-height: 100vh;
         background-color: #041228;
@@ -909,4 +909,47 @@ body {
     align-items: flex-start;
     gap: 30px; /* ระยะห่างระหว่างองค์ประกอบ */
   }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+
+    body {
+        min-height: 100vh;
+        background-color: #041228;
+        background: #041228 url(resource/future.png) no-repeat center center;
+        background-size: 1200px auto;
+        background-position: right -300px top 100px;
+        padding-top: 90px;
+        padding-left: 3%;
+        z-index: 1;
+    }
+
+    .content {
+        margin-top: 20%;
+    }
+    
+    .text-content{
+        margin-top: -15%;
+    }
+
+    
+    .text-content .main-topic {
+        font-size: 50px;
+    }
+
+    .text-content .topic {
+        font-size: 75px;
+    }
+
+    .text-content .sub-title {
+        font-size: 16px;
+    }
+    
+    .text-left .title1 {
+        font-size: 20px;
+    }
+
+    .text-left .title2 {
+        font-size: 22px;
+    }
 }
