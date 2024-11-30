@@ -631,6 +631,10 @@ strong{
         padding-top: 5px;
         font-size: 12px;
     }
+
+    .error{
+        font-size: 15px;
+    }
 }
 
 /*Mobile*/
