@@ -620,3 +620,7 @@ h3{
     padding-left: 40px;
     padding-top: 20px;
 }
+
+strong{
+    font-weight: 400;
+}
