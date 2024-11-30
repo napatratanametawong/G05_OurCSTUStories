@@ -582,7 +582,7 @@ button:hover {
     font-size: 13px;
     color: #0ef;
     font-family: "Mitr",serif;
-  }
+}
   
 /*error messages */
 .error {
@@ -591,4 +591,23 @@ button:hover {
     color: red;
     display: block;
     margin-top: 5px;
-  }
+}
+
+/*display comment*/
+h3{
+    color: #A0FEFB;
+    font-size: 30px;
+    font-family: "Orbitron" ,sans-serif;
+    font-optical-sizing: auto;
+    text-align: left;
+    margin-top: -60px;
+}
+
+#displaycomments{
+    background-color: #1B273A;
+    border-radius: 8px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+}
