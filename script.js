@@ -98,6 +98,41 @@ async function submitForm(event) {
 // Event listener submission form
 document.getElementById("myForm").addEventListener("submit", submitForm);
 
+//display all comments in comment container
+// Select the form element and the comment container
+const form = document.querySelector('#myForm');
+commentContainer.id = 'commentContainer';
+
+// Add event listener to handle the form submission
+form.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Get user input values
+  const fullname = document.querySelector('#fullname').value;
+  const email = document.querySelector('#email').value;
+  const date = document.querySelector('#date').value;
+  const topic = document.querySelector('#topic').value;
+  const comment = document.querySelector('#comment').value;
+
+  // Create a new comment element
+  const newComment = document.createElement('div');
+  newComment.className = 'user-comment';
+  newComment.innerHTML = `
+    <p><strong>Name:</strong> ${fullname}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Date:</strong> ${date}</p>
+    <p><strong>Topic:</strong> ${topic}</p>
+    <p><strong>Your comment:</strong> ${comment}</p>
+    <hr>
+  `;
+
+  // Append the new comment to the comment container
+  commentContainer.appendChild(newComment);
+
+  // Clear the form inputs after submit
+  form.reset();
+});
+
 
 //Journey
 
