@@ -302,7 +302,7 @@ body {
     bottom: 0;
     left: 0;
     top: 100%;
-    width: 100%;
+    width: 100%; 
     height: 420px;
     background-image: linear-gradient(to right, rgba(154, 14,154, 1), rgba(22, 15, 137, 1));
     z-index: 1;
@@ -406,7 +406,7 @@ body {
     font-family: "Orbitron", sans-serif;
   }
 
-  .boss,.jui,.nungning,.safe {
+  .boss,.jui,.nungning,.safe,.tor {
         display: inline-block;
         background: #efe8f3;
         color: rgb(0, 0, 0);
@@ -435,12 +435,161 @@ body {
     line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
   }
 
-/*tablet*/
-@media (max-width: 992px) {
+
+/* Tablet (ขนาดหน้าจอระหว่าง 768px ถึง 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
     header {
-        padding: 1.3rem 5%;
+        padding: 1.3rem 5%; /* ลด padding ของ header */
     }
+
+    .main-topic{
+        font-size: 80px;
+    }
+
+    .topic{
+        font-size: 100px;
+    }
+
+    .container {
+        margin-top: 1%;
+        width: 98%;
+        height: 150px;
+        gap: 25px;
+    }
+    
+    .title1{
+        font-size: 13px;
+    }
+
+    .title2{
+        font-size: 24px;
+    }
+
+    .future-maker-images {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 24px;
+    }
+
+
+    .background-container {
+        margin-top: -10%;
+        width: 100vw;
+        height: 38%;
+    }
+
+    .box-left,.box-right {
+        width: 100; 
+        height: auto;
+    }
+
+    .future-ai {
+        width: 25%; /* ลดขนาดภาพ */
+        margin-bottom: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .future-maker-caption{
+        font-size: 20px;
+    }
+
+    .future-maker-images {
+        gap: 8px; /* ลดระยะห่างระหว่างภาพ */
+    }
+
+    .future-maker-container{
+        line-height: 0.2;
+    }
+
+    .future-person {
+        width: 80px; /* ลดขนาดภาพกลม */
+        height: 80px;
+    }
+
+    .future-person {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bg-title {
+        margin-top: 10%; /* ลดระยะห่างจากขอบ */
+    }
+
+    .main-title {
+        font-size: 36px; /* ลดขนาดหัวข้อ */
+    }
+
+    .sub-title1 {
+        font-size: 18px; /* ลดขนาดตัวอักษรรอง */
+    }
+
+    .content-container {
+        margin-top: 22%;
+      }
+      
+      /* Card Style */
+      .card {
+        width: 300px;
+        height: 450px;
+      }
+      
+      .profile-img {
+        height: 500px;
+      }
+      
+      .card-info {
+        bottom: 5%;
+        color: white; /* สีตัวอักษร */
+        padding: 5px 10px;
+      }
+      
+      .role {
+        padding: 8px 15px;
+        border-radius: 40px;
+        margin-left: -80px;
+      }
+      
+      .name {
+        font-size: 36px;
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+      
+      /* กล่องข้อความ */
+      .text-box {
+        flex: 0 0 550px;
+        height: 450px;
+
+      }
+      
+      .box-description {
+        font-size: 14px;
+      }
+    
+      .boss,.jui,.nungning,.safe,.tor {
+            font-size: 18px;
+            padding: 8px 15px;
+            margin-left: -120px;
+      }
+
+      .quote-container {
+        padding: 40px; /* ช่องว่างภายใน */
+        width: 80%; /* ความกว้าง 80% ของหน้าจอ */
+        margin: 100px auto; /* จัดกลางหน้าจอ */
+        background: url('resource/future-footer.jpg') no-repeat center center;
+        background-size: cover; /* เพื่อให้ภาพขยายเต็มขอบเขต */
+        background-position: center center; /* วางภาพไว้ที่กลางกรอบ */
+      }
+
+      .quote-text {
+        font-size: 20px;
+      }
+    
 }
+
 
 /*Mobile*/
 @media (max-width: 768px) {
