@@ -702,6 +702,7 @@ strong{
         position: absolute;
         margin-top: 65px;
         font-size: 14px;
+        font-weight: 300;
     }
 
     .form-group input:focus~label,
@@ -714,10 +715,12 @@ strong{
     .form-group select{
         margin-top: 20px;
         font-size: 14px;
+        font-weight: 300;
     }
 
     .form-comment label{
         font-size: 14px;
+        font-weight: 300;
     }
     .form-comment {
         width: 245px;
@@ -725,10 +728,13 @@ strong{
 
     .form-comment textarea{
         font-size: 14px;
+        font-weight: 250;
+        margin-top: -30px;
     }
 
     button{
         width: 250px;
         height: 30px;
+        font-weight: 300;
     }
 }
