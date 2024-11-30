@@ -658,4 +658,77 @@ strong{
         display: inline;
     }
 
+    #containerguestbook{
+        margin-top: -900px;
+    }
+
+    .container form{
+        flex-direction: column;
+        width: 600px;
+    }
+
+    form .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label{
+        position: absolute;
+        margin-top: 65px;
+        font-size: 14px;
+    }
+
+    .form-group input:focus~label,
+    .form-group input:valid~label{
+        top: -18px;
+        font-size: 10px;
+    }
+
+    #containerguestbook{
+        margin-top: -900px;
+    }
+
+    .container form{
+        flex-direction: column;
+        width: 600px;
+    }
+
+    form .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label{
+        position: absolute;
+        margin-top: 65px;
+        font-size: 14px;
+    }
+
+    .form-group input:focus~label,
+    .form-group input:valid~label{
+        top: -18px;
+        font-size: 10px;
+    }
+
+    .form-group input,
+    .form-group select{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .form-comment label{
+        font-size: 14px;
+    }
+    .form-comment {
+        width: 245px;
+    }
+
+    .form-comment textarea{
+        font-size: 14px;
+    }
+
+    button{
+        width: 250px;
+        height: 30px;
+    }
 }
