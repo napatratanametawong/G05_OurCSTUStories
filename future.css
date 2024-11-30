@@ -765,11 +765,11 @@ body {
         font-size: 18px;
     }
 
-    /* Card Style */
-    .content-container .card {
-        width: 300px;
-        height: 350px;
-    }
+        /* Card Style */
+        .content-container .card {
+            width: 300px;
+            height: 350px;
+        }
 
     .profile-img {
         height: 100%;
@@ -777,11 +777,11 @@ body {
         object-fit: cover; /* เพิ่มเพื่อให้ภาพเต็มกรอบ */
     }
 
-    .card-info {
-        bottom: 5%;
-        color: white;
-        padding: 5px 10px;
-    }
+        .card-info {
+            bottom: 5%;
+            color: white;
+            padding: 5px 10px;
+        }
 
     .card-info .role {
         font-size: 15px;
@@ -863,10 +863,50 @@ body {
     }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 993px) and (max-width: 1440px) {
+    body {
+        min-height: 100vh;
+        background-color: #041228;
+        background: #041228 url(resource/future.png) no-repeat center center;
+        background-size: 1200px auto;
+        background-position: right -300px top 100px;
+        padding-top: 90px;
+        padding-left: 3%;
+        z-index: 1;
+    }
 
-
-
- 
+    .content {
+        margin-top: 10%;
+    }
     
+    .text-content{
+        margin-top: -15%;
+    }
+
+    .text-content .main-topic {
+        font-size: 90px;
+    }
+
+    .text-content .topic {
+        font-size: 85px;
+    }
+
+    .text-content .sub-title {
+        font-size: 25px;
+    }
+
+    .text-left .title1 {
+        font-size: 20px;
+    }
+    
+    /* Container สำหรับการ์ดและกล่องข้อความ */
+  .content-container {
+    margin-top: 350px;
+    display: flex;
+    align-items: stretch; /* ทำให้กล่องยืดความสูงเท่ากัน */
+    justify-content: center;
+    align-items: stretch;
+    align-items: flex-start;
+    gap: 30px; /* ระยะห่างระหว่างองค์ประกอบ */
+  }
 }
