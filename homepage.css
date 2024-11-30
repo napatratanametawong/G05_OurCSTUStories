@@ -200,7 +200,7 @@ h2{
     text-align: center;
 }
 
-.containerguestbook{
+#containerguestbook{
     background-color: #1B273A;
     border-radius: 8px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
@@ -644,6 +644,8 @@ strong{
 
     h2{
         font-size: 30px;
+        padding-top: 25px;
+        padding-bottom: 15px;
     }
     .subtitle {
         font-size: 16px;
@@ -652,6 +654,7 @@ strong{
 
     .subtitle2{
         font-size: 18px;
+        padding-top: 20px;
     }
 
     .rating{
@@ -664,7 +667,7 @@ strong{
 
     .container form{
         flex-direction: column;
-        width: 600px;
+        width: 650px;
     }
 
     form .form-group{
@@ -685,12 +688,13 @@ strong{
     }
 
     #containerguestbook{
-        margin-top: -900px;
+        margin-top: -850px;
+        height: auto;
+        display: block;
     }
 
     .container form{
         flex-direction: column;
-        width: 600px;
     }
 
     form .form-group{
@@ -722,19 +726,24 @@ strong{
     .form-comment label{
         font-size: 14px;
         font-weight: 300;
+        margin-top: 140px;
     }
     .form-comment {
-        width: 245px;
+        width: 265px;
     }
 
     .form-comment textarea{
         font-size: 14px;
         font-weight: 250;
         margin-top: -30px;
+        height: 100px;
+        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     button{
-        width: 250px;
+        width: 265px;
         height: 30px;
         font-weight: 300;
         margin-top: -10px;
@@ -750,14 +759,23 @@ strong{
     }
 
     #commentContainer{
-        width: 270px;
+        width: auto;
+        height: auto;
         margin-top: 10px;
         margin-bottom: 20px;
     }
 
     .user-comment{
-        padding-left: 5px;
+        padding-left: 15px;
         padding-top: 5px;
         font-size: 12px;
+    }
+
+    small{
+        font-weight: 300;
+    }
+
+    .error{
+        font-size: 13px;
     }
 }
