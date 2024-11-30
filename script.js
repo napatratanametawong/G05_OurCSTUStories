@@ -86,7 +86,17 @@ function validateEmail() {
 }
 document.getElementById("email").addEventListener("input", validateEmail); // Event listeners for input email
 
-
+// Function to submit the form
+async function submitForm(event) {
+    event.preventDefault();
+  
+    // Validate form inputs before submission
+    if (!validateName() || !validateEmail()) {
+      return;
+    }
+}
+// Event listener submission form
+document.getElementById("myForm").addEventListener("submit", submitForm);
 
 
 //Journey
