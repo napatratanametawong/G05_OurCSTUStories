@@ -500,27 +500,25 @@ nav a:hover::after {
     text-align: center;
     line-height: 60px;
     color: #fff;
-}
-
-.card:hover {
+    z-index: 9;
+    transition: all ease 0.5s;
     cursor: pointer;
-}
-
-.card:hover .more_text {
-    visibility: visible;
-    opacity: 1;
 }
 
 .ri-add-large-line{
     color: white;
     font-size: 25px;
+    transition: all ease 0.5s;
+}
+
+.ri-add-large-line.active {
+    transition: all ease 0.7s;
+    color: rgb(102, 100, 100);
 }
 
 .more_text {
-    visibility: hidden;
-    opacity: 0;
     position: absolute;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -528,6 +526,10 @@ nav a:hover::after {
     padding: 30px;
     overflow-y: auto;
     transition: all ease 0.7s;
+}
+
+.more_text.active {
+    bottom: 0;
 }
 
 

@@ -1,3 +1,30 @@
+//Journey
+document.addEventListener("DOMContentLoaded", function() {
+  const moreButtons = document.querySelectorAll('.more_btn');
+  
+  moreButtons.forEach(function(button) {
+    
+      button.addEventListener('click', function() {
+          const card = this.closest('.card');
+          
+          const moreText = card.querySelector('.more_text');
+          if (moreText) {
+              moreText.classList.toggle('active');
+          }
+
+          const icon = card.querySelector('.ri-add-large-line');
+          if (icon) {
+              icon.classList.toggle('active');
+          }
+
+      });
+
+  });
+
+});
+
+
+
 //Homepage
 const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
@@ -132,14 +159,6 @@ form.addEventListener('submit', function (event) {
   // Clear the form inputs after submit
   form.reset();
 });
-
-
-//Journey
-
-
-
-
-
 
 
 
