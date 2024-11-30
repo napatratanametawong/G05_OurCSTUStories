@@ -544,7 +544,7 @@ h3{
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin: 0 auto;
-    height: 200px;
+    height: 300px;
     overflow: auto;
 }
 
@@ -575,6 +575,23 @@ strong{
     .gradient-box {
         top: 35%;
     }
+
+    #containerguestbook{
+        margin-top: -850px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+    .subtitle{
+        padding: 0px 20px;
+        font-size: 18px;
+    }
+
+    .subtitle2{
+        font-size: 20px;
+    }
+
 }
 
 /*Mobile*/
