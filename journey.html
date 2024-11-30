@@ -155,8 +155,20 @@
             Let's live in university according to the plan for better future.
         </p>
     </div>
+
     <!--link to JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $(".more_btn").on('click', function(){
+                $(this).closest(".card").find(".more_text").toggleClass("active");
+                $(this).closest(".card").find(".ri-add-large-line").toggleClass("active");
+            });
+        });
+
+    </script>
 
 </body>
 </html>
