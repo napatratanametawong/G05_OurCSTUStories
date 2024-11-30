@@ -645,11 +645,24 @@ h3{
     margin-top: -60px;
 }
 
-#displaycomments{
+#commentContainer{
     background-color: #1B273A;
     border-radius: 8px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin: 0 auto;
     height: 200px;
+    overflow: auto;
+}
+
+.user-comment{
+    color: white;
+    font-family: "Mitr",serif;
+    font-weight: 200;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+strong{
+    font-weight: 400;
 }
