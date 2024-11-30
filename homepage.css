@@ -612,3 +612,11 @@ h3{
     margin: 0 auto;
     height: 200px;
 }
+
+.user-comment{
+    color: white;
+    font-family: "Mitr",serif;
+    font-weight: 200;
+    padding-left: 40px;
+    padding-top: 20px;
+}
