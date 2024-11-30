@@ -573,3 +573,18 @@ button:hover {
     background: linear-gradient(45deg,#A0FEFB,#4315D7,#54F271);
     color: white;
 }
+
+/*small text*/
+.form-group small {
+    font-size: 13px;
+    color: #0ef;
+  }
+  
+/*error messages */
+.error {
+    font-family: "Mitr",serif;
+    font-size: 16px;
+    color: red;
+    display: block;
+    margin-top: 5px;
+  }
