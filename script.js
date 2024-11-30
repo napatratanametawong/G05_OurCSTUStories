@@ -45,7 +45,24 @@ prev.onclick = function(){
     loadShow();
 }
 
-
+//form guest book
+//validate data input in guest book
+  // Function validate fullname
+  function validateName() {
+    const fullnameInput = document.getElementById("fullname");
+    const names = fullnameInput.value.trim().split(" ");
+    const errorElement = document.getElementById("fullnameError");
+  
+    if (names.length !== 2) {
+      errorElement.textContent = "Please enter only first and last name, separated by spaces."; //Show a message when the user enters invalid information.
+      return false;
+    } 
+    else {
+      errorElement.textContent = ""; // Clear the error message when valid
+    }
+    return true;
+}
+document.getElementById("fullname").addEventListener("input", validateName); // Event listeners for input name
 
 
 
