@@ -744,4 +744,14 @@ strong{
         margin-top: 15px;
     }
 
+    h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #commentContainer{
+        width: 270px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
