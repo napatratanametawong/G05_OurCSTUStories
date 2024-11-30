@@ -700,7 +700,7 @@ strong{
 
     .form-group label{
         position: absolute;
-        margin-top: 65px;
+        margin-top: 45px;
         font-size: 14px;
         font-weight: 300;
     }
@@ -709,11 +709,12 @@ strong{
     .form-group input:valid~label{
         top: -18px;
         font-size: 10px;
+        letter-spacing: 1px;
     }
 
     .form-group input,
     .form-group select{
-        margin-top: 20px;
+        margin-top: 0px;
         font-size: 14px;
         font-weight: 300;
     }
@@ -736,5 +737,11 @@ strong{
         width: 250px;
         height: 30px;
         font-weight: 300;
+        margin-top: -10px;
     }
+
+    .form-group select{
+        margin-top: 15px;
+    }
+
 }
