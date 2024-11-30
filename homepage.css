@@ -642,6 +642,20 @@ strong{
         font-size: 16px;
     }
 
+    h2{
+        font-size: 30px;
+    }
+    .subtitle {
+        font-size: 16px;
+        margin: 0px 20px;
+    }
 
+    .subtitle2{
+        font-size: 18px;
+    }
+
+    .rating{
+        display: inline;
+    }
 
 }
