@@ -592,6 +592,23 @@ strong{
         font-size: 20px;
     }
 
+    .form-group input,
+    .form-group select{
+        margin-top: -10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .form-group label{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .form-comment label{
+        font-size: 17px;
+        font-weight: 400;
+    }
+
 }
 
 /*Mobile*/
