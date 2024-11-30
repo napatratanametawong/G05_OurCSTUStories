@@ -64,6 +64,27 @@ prev.onclick = function(){
 }
 document.getElementById("fullname").addEventListener("input", validateName); // Event listeners for input name
 
+// Function validate Email
+function validateEmail() {
+    const emailInput = document.getElementById("email");
+    const emailValue = emailInput.value.trim();
+    console.log("Email Input:", emailValue); // Check the values received.
+
+    const emailPattern = /^.+@dome\.tu\.ac\.th$/;
+    const errorElement = document.getElementById("emailError");
+
+    if (!emailPattern.test(emailValue)) {
+      errorElement.textContent = "Please enter your university email address in the form 'aaaa.bbb@dome.tu.ac.th'.";
+      console.log("Validation Failed"); // Check email meet the specified conditions.
+      return false;
+    } 
+    else {
+      errorElement.textContent = ""; // Clear the error message when valid
+      console.log("Validation Passed"); // Check email through verification
+    }
+    return true;
+}
+document.getElementById("email").addEventListener("input", validateEmail); // Event listeners for input email
 
 
 
