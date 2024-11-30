@@ -118,7 +118,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(80vh - 140px);
+    height: 500px;
     padding-left: 3%;
 }
 
@@ -329,7 +329,7 @@ body {
 
   /* Container สำหรับการ์ดและกล่องข้อความ */
   .content-container {
-    margin-top: 20%;
+    margin-top: 400px;
     display: flex;
     align-items: stretch; /* ทำให้กล่องยืดความสูงเท่ากัน */
     justify-content: center;
@@ -435,7 +435,7 @@ body {
   }
 
 
-  @media (max-width: 992px) {
+  @media (min-width: 769px) and (max-width: 992px) {
 
     body {
         min-height: 100vh;
@@ -452,8 +452,8 @@ body {
         padding: 1.3rem 5%; /* ลด padding ของ header */
     }
 
-    .text-content{
-        margin-top: -6%;
+    .content{
+        height: 450px;
     }
 
     .text-content .main-topic {
@@ -469,9 +469,8 @@ body {
     }
 
     .container{
-        top: -30px;
+        top: 1px;
         padding: 20px;
-        margin-top: 10%;
         width: 98%;
         height: 160px;
         gap: 25px;
@@ -494,10 +493,8 @@ body {
     }
 
     .background-container {
-        top: 590px;
-        margin-top: 7%;
-        width: 100vw;
-        height: 40%;
+        top: 660px;
+        height: 250px;
     }
 
     .box-left .future-ai {
@@ -526,7 +523,7 @@ body {
     }
 
     .background-container .bg-title {
-        margin-top: 110px;
+        margin-top: 90px;
     }
 
     .main-title {
@@ -535,6 +532,10 @@ body {
 
     .sub-title1 {
         font-size: 18px;
+    }
+
+    .content-container{
+        margin-top: 210px;
     }
 
     /* Card Style */
@@ -600,9 +601,6 @@ body {
         font-size: 20px;
     }
 
-    .content {
-        margin-top: 5%;
-    }
 
     #toggle-btn span {
         font-size: 26px; 
@@ -669,7 +667,7 @@ body {
     }
 
     .content {
-        margin-top: 5%;
+        height: 390px;
     }
 
     .text-content{
@@ -750,23 +748,23 @@ body {
         top: 438px;
         margin-top: 7%;
         width: 100vw;
-        height: 40%;
+        height: 230px;
     }
 
     .background-container .bg-title {
-        margin-top: 110px;
+        margin-top: 90px;
     }
 
     .main-title {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .sub-title1 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
         /* Card Style */
-        .content-container .card {
+    .content-container .card {
             width: 300px;
             height: 350px;
         }
@@ -792,6 +790,10 @@ body {
         font-size: 24px;
         margin-top: 10px;
         margin-left: 30px;
+    }
+
+    .content-container {
+        margin-top: 60px;
     }
 
     /* กล่องข้อความ */
@@ -863,7 +865,7 @@ body {
     }
 }
 
-@media (min-width: 993px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     body {
         min-height: 100vh;
         background-color: #041228;
@@ -876,13 +878,9 @@ body {
     }
 
     .content {
-        margin-top: 10%;
+        margin-top: 10px;
     }
     
-    .text-content{
-        margin-top: -15%;
-    }
-
     .text-content .main-topic {
         font-size: 90px;
     }
@@ -909,4 +907,47 @@ body {
     align-items: flex-start;
     gap: 30px; /* ระยะห่างระหว่างองค์ประกอบ */
   }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+
+    body {
+        min-height: 100vh;
+        background-color: #041228;
+        background: #041228 url(resource/future.png) no-repeat center center;
+        background-size: 1200px auto;
+        background-position: right -300px top 100px;
+        padding-top: 90px;
+        padding-left: 3%;
+        z-index: 1;
+    }
+
+    .content {
+        margin-top: 20%;
+    }
+    
+    .text-content{
+        margin-top: -15%;
+    }
+
+    
+    .text-content .main-topic {
+        font-size: 50px;
+    }
+
+    .text-content .topic {
+        font-size: 75px;
+    }
+
+    .text-content .sub-title {
+        font-size: 16px;
+    }
+    
+    .text-left .title1 {
+        font-size: 20px;
+    }
+
+    .text-left .title2 {
+        font-size: 22px;
+    }
 }
