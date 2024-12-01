@@ -207,7 +207,7 @@ h2{
     width: 90%;
     margin: 0 auto;
     height: 950px;
-    margin-top: -800px;
+    margin-top: -900px;
 }
 
 .subtitle2{
@@ -318,8 +318,8 @@ h2{
     position: absolute;
     top: 50%;
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid #fff;
+    background: transparent;
+    border: 2px solid #fff;
     left:50px;
     border-radius: 50%;
     width: 50px;
@@ -330,19 +330,30 @@ h2{
     left: unset;
     right: 50px;
 }
+
+#right:hover, #left:hover {
+    background-color: #ffffff70;
+    border-color: #54F271; 
+    transform: scale(1.5);
+}
+
+#right:hover .material-symbols-outlined, 
+#left:hover .material-symbols-outlined {
+    color: #54F271;
+}
+
 button .material-symbols-outlined{
     display: flex;
     justify-content: center;
 }
 /*font style*/
 .card-item .name {
-    font-size: 48px;
+    font-size: 32px;
     font-family: "Orbitron",sans-serif;
     color: #A0FEFB;
     font-weight: 700;
     font-style: normal;
     position: relative;
-    left:-11%;
 }
 .card-item .text {
     width: 420px;
@@ -500,6 +511,7 @@ button{
     width: 100%;
     height: 50px;
     border-radius: 5px;
+    border-color: #A0FEFB;
     background-color: #A0FEFB;
     font-family: "Mitr",serif;
     margin: 0px 30px;
@@ -507,8 +519,10 @@ button{
     cursor: pointer;
 }
 button:hover {
-    background: linear-gradient(45deg,#A0FEFB,#4315D7,#54F271);
-    color: white;
+    background-color: #A0FEFB;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 15px #0ef;
+    transform: scale(1.05);
 }
 
 /*small text*/
@@ -729,6 +743,11 @@ strong{
 
 /*Mobile*/
 @media (max-width: 768px) {
+    body {
+        padding-right: 0; /* ปรับระยะห่างทางขวาของ body */
+        margin-right: 0; /* ถ้าต้องการให้ไม่มี margin ขอบขวา */
+    }
+
     .logo {
         font-size: 22px;
     }
@@ -953,16 +972,16 @@ strong{
     .members-image img {
         height: 190px;
         position: absolute;
-        top: 130px;
+        top: 140px;
     }
     /*button(members-slide)*/
     #right,#left {
-        top: 85%;
+        top: 90%;
     }
     /*contact(members-slide)*/
     .contact-container{
         position: absolute;
-        top: 85%;
+        top: 88%;
         right: 3%;
     }
 
