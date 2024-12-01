@@ -607,6 +607,7 @@ strong{
 
     #containerguestbook{
         margin-top: -850px;
+        height: auto;
     }
 
     h2{
@@ -649,9 +650,10 @@ strong{
 
     h3{
         margin-left: 20px;
+        margin-top: -70px;
     }
     #commentContainer{
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 20px;
     }
 
@@ -680,6 +682,8 @@ strong{
     .card-item .name {
         font-size: 35px;
     }
+
+ 
 }
 
 /*Mobile*/
@@ -771,8 +775,8 @@ strong{
     }
 
     .container form{
-        flex-direction: column;
-        width: 650px;
+        display: inline;
+        
     }
 
     form .form-group{
@@ -803,10 +807,12 @@ strong{
     }
 
     form .form-group{
-        display: flex;
-        flex-direction: column;
+        /*width: calc(100% /2 -20px);*/
+        margin: 0px;
+        width: 100%;
+        padding: 0px 30px;
+        position: relative;
     }
-
     .form-group label{
         position: absolute;
         margin-top: 45px;
@@ -828,13 +834,21 @@ strong{
         font-weight: 300;
     }
 
+    #containerguestbook .form-group input{
+        display: flex;
+        
+    }
     .form-comment label{
         font-size: 14px;
         font-weight: 300;
         margin-top: 140px;
     }
     .form-comment {
-        width: 265px;
+        margin: 0px;
+        width: 100%;
+        padding: 0px 30px;
+        padding-top: 50px;
+        position: relative;
     }
 
     .form-comment textarea{
@@ -848,10 +862,12 @@ strong{
     }
 
     button{
-        width: 265px;
+        width: 80%;
         height: 30px;
         font-weight: 300;
-        margin-top: -10px;
+        margin: 10px auto;
+        position: relative;
+        display: block;
     }
 
     .form-group select{
@@ -861,6 +877,7 @@ strong{
     h3{
         font-size: 20px;
         text-align: center;
+        margin-top: 20px;
     }
 
     #commentContainer{
@@ -906,5 +923,29 @@ strong{
         position: absolute;
         top: 85%;
         right: 3%;
+    }
+
+       /*alert box*/
+    .swal2-popup {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        font-size: 9px;
+    }
+    .swal2-title{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    .swal2-confirm{
+        font-size: 10px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .swal-icon{
+        padding-bottom: -90px;
     }
 }
