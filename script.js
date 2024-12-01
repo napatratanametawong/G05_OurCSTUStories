@@ -171,7 +171,3 @@ function displayComment() {
   // Clear the form inputs after submit
   form.reset();
 }
-
-
-
-//Future

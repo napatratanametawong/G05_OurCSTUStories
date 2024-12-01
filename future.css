@@ -177,14 +177,16 @@ body {
     justify-content: center;
     align-items: center;
     border: 3px solid #ffffff;
-    background-color: #cdcdcd;
+    background: rgba(217, 217, 217, 0.63);
+    backdrop-filter: blur(7px);
     border-radius: 15px;
 }
   
 .box-left {
     flex: 1;
     transition: flex 0.5s ease;
-    background-color: #5a5f5f;
+    background: rgba(90, 95, 95, 0.7);
+    backdrop-filter: blur(7px);
     padding: 15px;
     display: flex;
     align-items: center;
@@ -198,12 +200,13 @@ body {
 .title1 {
     font-family: "Mitr", serif;
     color: #54F271;
-    font-size: 20px; 
+    font-size: 18px; 
+    font-weight: 300;
 }
 
 .title2 {
     font-family: "Orbitron", sans-serif; 
-    font-size: 36px; 
+    font-size: 32px; 
     color: #fcfcfc;
 }
 
