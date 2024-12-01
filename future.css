@@ -436,7 +436,7 @@ body {
   }
 
 
-  @media (min-width: 769px) and (max-width: 992px) {
+  @media (min-width: 811px) and (max-width: 992px) {
 
     body {
         min-height: 100vh;
@@ -1804,4 +1804,192 @@ body {
 .content-container .text-box {
     flex: 0 0 850px;   
 }
+}
+
+@media (min-width: 769px) and (max-width: 810px) {
+    body {
+        min-height: 100vh;
+        background-color: #041228;
+        background: #041228 url(resource/future.png) no-repeat center center;
+        background-size: 800px auto;
+        background-position: right -200px top 100px;
+        padding-top: 90px;
+        padding-left: 3%;
+        z-index: 1;
+    }
+
+    header {
+        padding: 1.3rem 5%; /* ลด padding ของ header */
+    }
+
+    .content{
+        height: 350px;
+    }
+
+    .text-content .main-topic {
+        font-size: 50px;
+    }
+
+    .text-content .topic {
+        font-size: 60px;
+    }
+
+    .text-content .sub-title {
+        font-size: 13px;
+    }
+
+    .container{
+        padding: 20px;
+        width: 98%;
+        height: 160px;
+        gap: 25px;
+    }
+
+    .text-left .title1 {
+        font-size: 11px;
+    }
+
+    .text-left .title2 {
+        font-size: 17px;
+    }
+
+    .future-maker-images {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 23px;
+    }
+    
+
+    .background-container {
+        top: 543px;
+        height: 250px;
+    }
+
+    .box-left .future-ai {
+        width: 25%;
+        margin-bottom: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .future-maker-caption {
+        font-size: 18px;
+    }
+
+    .future-maker-images {
+        gap: 8px;
+    }
+
+    .future-maker-container {
+        line-height: 0.2;
+    }
+
+    .future-maker-images .future-person {
+        width: 60px;
+        height: 60px;
+        object-fit: cover; /* ป้องกันภาพเบี้ยว */
+    }
+
+    .background-container .bg-title {
+        margin-top: 100px;
+    }
+
+    .main-title {
+        font-size: 34px;
+    }
+
+    .sub-title1 {
+        font-size: 16px;
+    }
+
+    .content-container{
+        margin-top: 210px;
+    }
+
+    /* Card Style */
+    .content-container .card {
+        width: 250px;
+        height: 400px;
+    }
+
+    .profile-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* เพิ่มเพื่อให้ภาพเต็มกรอบ */
+    }
+
+    .card-info {
+        bottom: 5%;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    .role {
+        padding: 8px 15px;
+        border-radius: 40px;
+        margin-left: -80px;
+    }
+
+    .name {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    /* กล่องข้อความ */
+    .content-container .text-box {
+        flex: 0 0 400px;
+        height: 400px;
+    }
+
+    .text-box .box-description {
+        font-size: 14px;
+    }
+
+    .boon{
+        font-size: 18px;
+        padding: 8px 15px;
+        margin-left: -60px;
+    }
+
+    .boss,
+    .jui,
+    .nungning,
+    .safe
+     {
+        font-size: 18px;
+        padding: 8px 15px;
+        margin-left: -100px;
+    }
+
+    .tor {
+        font-size: 18px;
+        padding: 8px 15px;
+        margin-left: -60px;
+    }
+
+    .quote-container {
+        padding: 40px;
+        width: 80%;
+        margin: 100px auto;
+        background: url('resource/future-footer.jpg') no-repeat center center;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .quote-container .quote-text {
+        font-size: 18px;
+    }
+
+
+    #toggle-btn span {
+        font-size: 26px; 
+      }
+
+      .box-left,.box-right {
+        width: 100; 
+        height: auto;
+    }
 }
