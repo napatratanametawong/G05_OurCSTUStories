@@ -1010,3 +1010,71 @@ strong{
         padding-bottom: -90px;
     }
 }
+
+@media (max-width: 360px) {
+    h2{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .subtitle {
+        font-size: 11px;
+    }
+
+    .subtitle2{
+        font-size: 12px;;
+    }
+
+    .form-group {
+        font-size: 11px;
+    }
+
+    .form-group input:focus~label,
+    .form-group input:valid~label{
+        font-size: 10px;
+    }
+
+    .form-group label{
+        font-size: 11px;
+    }
+
+    .form-group input:focus~label,
+    .form-group input:valid~label{
+        font-size: 10px;
+    }
+
+    .form-group input,
+    .form-group select{
+        font-size: 11px;
+    }
+
+    .form-comment label{
+        font-size: 11px;
+    }
+
+    .form-comment textarea{
+        font-size: 10px;
+    }
+
+    button{
+       font-size: 15px;
+    }
+
+    .form-group select{
+        margin-top: 14px;
+    }
+
+    h3{
+        font-size: 15px;
+        text-align: center;
+        margin-top: -10px;
+        margin-left: 0px;
+    }
+
+    .user-comment{
+        font-size: 11px;
+    }
+
+    .error{
+        font-size: 9px;
+    }
+}
