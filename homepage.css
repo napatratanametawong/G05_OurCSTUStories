@@ -650,7 +650,7 @@ strong{
     }
 
     /*members-slide*/
-    
+
     /*card(members-slide)*/
     .card-item {
         width: 320px;
@@ -879,7 +879,7 @@ strong{
     .members-image img {
         height: 190px;
         position: absolute;
-        top: 140px;
+        top: 130px;
     }
     /*button(members-slide)*/
     #right,#left {
@@ -888,7 +888,7 @@ strong{
     /*contact(members-slide)*/
     .contact-container{
         position: absolute;
-        top: 88%;
+        top: 85%;
         right: 3%;
     }
 }
