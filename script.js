@@ -81,7 +81,7 @@ prev.onclick = function(){
     const errorElement = document.getElementById("fullnameError");
   
     if (names.length !== 2 || names[0] === "" || names[1] === "") {
-      errorElement.textContent = "Please enter only first and last name, separated by spaces."; //Show a message when the user enters invalid information.
+      errorElement.textContent = "Please enter only first name and last name, separated by spaces."; //Show a message when the user enters invalid information.
       return false;
     } 
     else {
@@ -101,7 +101,7 @@ function validateEmail() {
     const errorElement = document.getElementById("emailError");
 
     if (!emailPattern.test(emailValue)) {
-      errorElement.textContent = "Please enter your university email address in the form 'aaaa.bbb@dome.tu.ac.th'.";
+      errorElement.textContent = "Please enter your university email in this format 'aaa.bbb@dome.tu.ac.th'.";
       console.log("Validation Failed"); // Check email meet the specified conditions.
       return false;
     } 
