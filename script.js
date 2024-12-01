@@ -80,7 +80,7 @@ prev.onclick = function(){
     const names = fullnameInput.value.trim().split(" ");
     const errorElement = document.getElementById("fullnameError");
   
-    if (names.length !== 2) {
+    if (names.length !== 2 || names[0] === "" || names[1] === "") {
       errorElement.textContent = "Please enter only first and last name, separated by spaces."; //Show a message when the user enters invalid information.
       return false;
     } 
@@ -119,20 +119,32 @@ async function submitForm(event) {
   
     // Validate form inputs before submission
     if (!validateName() || !validateEmail()) {
+      //alert when user input invalid data
+      Swal.fire({
+        icon: 'error',
+        title: 'Invalid data!!',
+        text: 'Please fill in the information correctly before submitting.',
+        confirmButtonText: 'OK'
+      });
       return;
     }
+    Swal.fire({
+      icon: 'success',
+      title: 'Thank you!',
+      text: 'Your comment has been successfully submitted',
+      confirmButtonText: 'OK'
+    }).then(() => {
+      displayComment(); // Call function to display comment
+    });
 }
 // Event listener submission form
 document.getElementById("myForm").addEventListener("submit", submitForm);
 
 //display all comments in comment container
 // Select the form element and the comment container
-const form = document.querySelector('#myForm');
-commentContainer.id = 'commentContainer';
-
-// Add event listener to handle the form submission
-form.addEventListener('submit', function (event) {
-  event.preventDefault(); // Prevent the default form submission behavior
+function displayComment() {
+  const form = document.querySelector('#myForm');
+  const commentContainer = document.getElementById('commentContainer');
 
   // Get user input values
   const fullname = document.querySelector('#fullname').value;
@@ -145,12 +157,12 @@ form.addEventListener('submit', function (event) {
   const newComment = document.createElement('div');
   newComment.className = 'user-comment';
   newComment.innerHTML = `
-    <p><strong>Name:</strong> ${fullname}</p>
-    <p><strong>Email:</strong> ${email}</p>
-    <p><strong>Date:</strong> ${date}</p>
-    <p><strong>Topic:</strong> ${topic}</p>
-    <p><strong>Your comment:</strong> ${comment}</p>
-    <hr>
+      <p><strong>Name:</strong> ${fullname}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Date:</strong> ${date}</p>
+      <p><strong>Topic:</strong> ${topic}</p>
+      <p><strong>Your comment:</strong> ${comment}</p>
+      <hr>
   `;
 
   // Append the new comment to the comment container
@@ -158,17 +170,8 @@ form.addEventListener('submit', function (event) {
 
   // Clear the form inputs after submit
   form.reset();
-});
+}
 
-//alert after click submit
-document.getElementById("submitButton").addEventListener("click", function () {
-  Swal.fire({
-      icon: 'success', 
-      title: 'Thank you!', 
-      text: 'Your comment has been successfully submitted', 
-      confirmButtonText: 'OK' 
-  });
-});
 
 
 //Future
