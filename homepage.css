@@ -808,7 +808,7 @@ strong{
     }
 
     .rating{
-        display: inline;
+        display: none;
     }
 
     #containerguestbook{
