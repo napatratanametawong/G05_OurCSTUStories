@@ -189,6 +189,12 @@ function displayComment() {
 
   // Clear the form inputs after submit
   form.reset();
+
+  // Clear rating stars after submit
+  const stars = document.querySelectorAll('.rating input[type="radio"]');
+  stars.forEach((star) => {
+    star.checked = false; // Uncheck all selected stars
+  });
 }
 
 
