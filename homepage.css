@@ -625,22 +625,22 @@ strong{
     .form-group input,
     .form-group select{
         margin-top: -10px;
-        font-size: 16px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 300;
     }
 
     .form-group label{
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 300;
     }
 
     .form-comment label{
-        font-size: 17px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 300;
     }
 
     .form-comment textarea{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 300;
         margin-top: -30px;
         padding-top: 40px;
@@ -648,9 +648,11 @@ strong{
         padding-right: 20px;
     }
 
+   
     h3{
         margin-left: 20px;
-        margin-top: -70px;
+        margin-top: -75px;
+        font-size: 30px;
     }
     #commentContainer{
         margin-top: 0px;
@@ -663,9 +665,24 @@ strong{
         font-size: 12px;
     }
 
+    small{
+        font-size: 14px;
+        font-weight: 200;
+    }
     .error{
         font-size: 15px;
     }
+
+    
+    button{
+        width: 80%;
+        height: 40px;
+        font-weight: 500;
+        margin: -9px auto;
+        position: relative;
+        display: block;
+    }
+
 
     /*members-slide*/
 
@@ -683,6 +700,30 @@ strong{
         font-size: 35px;
     }
 
+    /*alert box*/
+    .swal2-popup {
+        width: 450px;
+        height: 300px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    .swal2-title{
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .swal2-confirm{
+        font-size: 15px;
+        width: 80px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .swal-icon{
+        padding-bottom: -90px;
+    }
  
 }
 
