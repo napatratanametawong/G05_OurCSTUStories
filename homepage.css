@@ -563,6 +563,22 @@ strong{
     font-weight: 400;
 }
 
+/*alert box*/
+.swal2-popup {
+    font-family: "Mitr",serif;
+}
+.swal2-title{
+    font-family: "Mitr",serif;
+}
+
+.swal2-confirm {
+    background-color: #1B273A;
+}
+
+.swal2-confirm:hover{
+    background-color: #4315D7;
+}
+
 /* set pc for other media*/
 @media (min-width:786px) {
     /*members-slide*/
@@ -594,6 +610,7 @@ strong{
 
     #containerguestbook{
         margin-top: -850px;
+        height: auto;
     }
 
     h2{
@@ -611,22 +628,22 @@ strong{
     .form-group input,
     .form-group select{
         margin-top: -10px;
-        font-size: 16px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 300;
     }
 
     .form-group label{
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 300;
     }
 
     .form-comment label{
-        font-size: 17px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 300;
     }
 
     .form-comment textarea{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 300;
         margin-top: -30px;
         padding-top: 40px;
@@ -634,11 +651,14 @@ strong{
         padding-right: 20px;
     }
 
+   
     h3{
         margin-left: 20px;
+        margin-top: -75px;
+        font-size: 30px;
     }
     #commentContainer{
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 20px;
     }
 
@@ -648,14 +668,66 @@ strong{
         font-size: 12px;
     }
 
+    small{
+        font-size: 14px;
+        font-weight: 200;
+    }
     .error{
         font-size: 15px;
     }
 
-    /*text members-slide*/
+    
+    button{
+        width: 80%;
+        height: 40px;
+        font-weight: 500;
+        margin: -9px auto;
+        position: relative;
+        display: block;
+    }
+
+
+    /*members-slide*/
+
+    /*card(members-slide)*/
+    .card-item {
+        width: 320px;
+        height: 470px;
+    }
+
+    /*text(members-slide)*/
     .card-item .subtitle {
         margin: 0;
     }
+    .card-item .name {
+        font-size: 35px;
+    }
+
+    /*alert box*/
+    .swal2-popup {
+        width: 450px;
+        height: 300px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    .swal2-title{
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .swal2-confirm{
+        font-size: 15px;
+        width: 80px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .swal-icon{
+        padding-bottom: -90px;
+    }
+ 
 }
 
 /*Mobile*/
@@ -744,7 +816,7 @@ strong{
     }
 
     .rating{
-        display: inline;
+        display: none;
     }
 
     #containerguestbook{
@@ -752,8 +824,8 @@ strong{
     }
 
     .container form{
-        flex-direction: column;
-        width: 650px;
+        display: inline;
+        
     }
 
     form .form-group{
@@ -784,10 +856,12 @@ strong{
     }
 
     form .form-group{
-        display: flex;
-        flex-direction: column;
+        /*width: calc(100% /2 -20px);*/
+        margin: 0px;
+        width: 100%;
+        padding: 0px 30px;
+        position: relative;
     }
-
     .form-group label{
         position: absolute;
         margin-top: 45px;
@@ -809,13 +883,21 @@ strong{
         font-weight: 300;
     }
 
+    #containerguestbook .form-group input{
+        display: flex;
+        
+    }
     .form-comment label{
         font-size: 14px;
         font-weight: 300;
         margin-top: 140px;
     }
     .form-comment {
-        width: 265px;
+        margin: 0px;
+        width: 100%;
+        padding: 0px 30px;
+        padding-top: 50px;
+        position: relative;
     }
 
     .form-comment textarea{
@@ -829,10 +911,12 @@ strong{
     }
 
     button{
-        width: 265px;
+        width: 80%;
         height: 30px;
         font-weight: 300;
-        margin-top: -10px;
+        margin: 10px auto;
+        position: relative;
+        display: block;
     }
 
     .form-group select{
@@ -842,6 +926,7 @@ strong{
     h3{
         font-size: 20px;
         text-align: center;
+        margin-top: 20px;
     }
 
     #commentContainer{
@@ -887,5 +972,29 @@ strong{
         position: absolute;
         top: 88%;
         right: 3%;
+    }
+
+       /*alert box*/
+    .swal2-popup {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        font-size: 9px;
+    }
+    .swal2-title{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    .swal2-confirm{
+        font-size: 10px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .swal-icon{
+        padding-bottom: -90px;
     }
 }
