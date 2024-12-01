@@ -318,8 +318,8 @@ h2{
     position: absolute;
     top: 50%;
     color: #fff;
-    background: linear-gradient(to right, #CC19CC,#4315D7);
-    border: 1px solid #fff;
+    background: transparent;
+    border: 2px solid #fff;
     left:50px;
     border-radius: 50%;
     width: 50px;
@@ -330,19 +330,30 @@ h2{
     left: unset;
     right: 50px;
 }
+
+#right:hover, #left:hover {
+    background-color: #ffffff70;
+    border-color: #54F271; 
+    transform: scale(1.5);
+}
+
+#right:hover .material-symbols-outlined, 
+#left:hover .material-symbols-outlined {
+    color: #54F271;
+}
+
 button .material-symbols-outlined{
     display: flex;
     justify-content: center;
 }
 /*font style*/
 .card-item .name {
-    font-size: 48px;
+    font-size: 32px;
     font-family: "Orbitron",sans-serif;
     color: #A0FEFB;
     font-weight: 700;
     font-style: normal;
     position: relative;
-    left:-11%;
 }
 .card-item .text {
     width: 420px;
