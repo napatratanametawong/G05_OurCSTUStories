@@ -287,7 +287,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 300px;
-    margin-top:10%;
+    margin-top: 20%;
     background-image: linear-gradient(to right, rgba(154, 14, 154, 1), rgba(22, 15, 137, 1));
 }
 
@@ -623,6 +623,10 @@ strong{
         padding: 1.3rem 5%;
     }
 
+    main {
+        margin-top: 600px;
+    }
+
     .cstu-container {
         font-size: 80px;
         top: 20%;
@@ -630,7 +634,7 @@ strong{
     }
     
     .gradient-box {
-        top: 35%;
+        display: none;
     }
 
     #containerguestbook{
@@ -638,9 +642,11 @@ strong{
         height: auto;
     }
 
-    h2{
+    .title-guest {
         font-size: 35px;
+        margin-top: 1000px;
     }
+
     .subtitle{
         padding: 0px 20px;
         font-size: 18px;
@@ -756,10 +762,21 @@ strong{
 }
 
 /*Mobile*/
+@media (min-width: 769px) and (max-width: 991px) {
+    .cstu-container {
+        top: 30%;
+    }
+    main {
+        margin-top: 500px;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     body {
-        padding-right: 0; /* ปรับระยะห่างทางขวาของ body */
-        margin-right: 0; /* ถ้าต้องการให้ไม่มี margin ขอบขวา */
+        padding-right: 0;
+        margin-right: 0;
     }
 
     .logo {
@@ -808,24 +825,21 @@ strong{
     }
 
     .cstu-container {
-        font-size: 30px;
+        font-size: 48px;
         top: 23%;
-        gap: 100px;
+        gap: 160px;
     }
 
     .gradient-box {
         top: 19%;
     }
 
-    h2 {
-        font-size: 18px;
+    main {
+        margin-top: 450px;
     }
 
-    .subtitle {
-        font-size: 16px;
-    }
 
-    h2{
+    .title-guest {
         font-size: 30px;
         padding-top: 25px;
         padding-bottom: 15px;
@@ -993,7 +1007,7 @@ strong{
     }
     /*button(members-slide)*/
     #right,#left {
-        top: 90%;
+        top: 45%;
     }
     /*contact(members-slide)*/
     .contact-container{
@@ -1028,8 +1042,66 @@ strong{
     }
 }
 
+@media (min-width: 577px) and (max-width: 767px) {
+    .cstu-container {
+        font-size: 64px;
+        top: 23%;
+        gap: 160px;
+    }
+
+    main {
+        margin-top: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        margin-top: 300px;
+    }
+}
+
+@media (min-width: 491px) and (max-width: 575px) {
+    .cstu-container {
+        font-size: 48px;
+        top: 18%;
+        gap: 160px;
+    }
+    
+    main {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 490px) {
+    .cstu-container {
+        top: 18%;
+    }
+    main {
+        margin-top: 270px;
+    }
+}
+
+@media (min-width: 391px) and(max-width: 489px) {
+    .cstu-container {
+        top: 10%;
+        gap: 140px;
+    }
+    main {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 390px) {
+    .cstu-container {
+        gap: 120px;
+    }
+    main {
+        margin-top: 200px;
+    }
+}
+
 @media (max-width: 360px) {
-    h2{
+    .text-guest{
         font-size: 20px;
         padding-bottom: 10px;
     }
