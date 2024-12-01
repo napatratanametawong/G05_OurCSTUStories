@@ -259,16 +259,8 @@ main {
     font-size: 80px;
     -webkit-animation:1s pulse ease;
     animation: 1s pulse ease;
-    font-size: 80px;
 }
-.rating input{
-    display: none;
-}
-.rating input:checked ~ label::after{
-    content: "★";
-    color: #d2d21f;
-    text-shadow: 0 0 20px #d2d21f;
-}
+
 
 /*hover effect*/
 .rating label :hover::after{
@@ -278,7 +270,6 @@ main {
 .rating input{
     display: none;
 }
-.rating input:checked + label::after,
 .rating input:checked ~ label::after{
     content: "★";
     color: #d2d21f;
@@ -651,6 +642,12 @@ strong{
         height: auto;
     }
 
+    .rating{
+        width: 350px;
+    }
+    .rating label::after{
+        margin-top: -20px;
+    }
     .title-guest {
         font-size: 35px;
         margin-top: 1000px;
@@ -864,9 +861,15 @@ strong{
     }
 
     .rating{
-        display: none;
+        gap: 0;
+        margin-top: 5px;
+        margin-bottom: 50px;
+        width: 230px;
     }
-
+    .rating label::after{
+        font-size: 50px;
+        font-weight: 100;
+    }
     #containerguestbook{
         margin-top: -900px;
     }
@@ -1067,6 +1070,16 @@ strong{
     main {
         margin-top: 300px;
     }
+    .rating{
+        gap: 0;
+        margin-top: 5px;
+        margin-bottom: 40px;
+        width: 200px;
+    }
+    .rating label::after{
+        font-size: 40px;
+        font-weight: 100;
+    }
 }
 
 @media (min-width: 491px) and (max-width: 575px) {
@@ -1110,6 +1123,15 @@ strong{
 }
 
 @media (max-width: 360px) {
+    .rating{
+        gap: 0;
+        margin-top: 15px;
+        margin-bottom: -70px;
+        width: 100px;
+    }
+    .rating label::after{
+        font-size: 20px;
+    }
     .text-guest{
         font-size: 20px;
         padding-bottom: 10px;
