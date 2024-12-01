@@ -113,6 +113,22 @@ function validateEmail() {
 }
 document.getElementById("email").addEventListener("input", validateEmail); // Event listeners for input email
 
+// star rating
+function getStarRating(rating) {
+  let stars = '';
+  for (let i = 1; i <= 5; i++) {
+    stars += i <= rating ? '★' : '☆'; 
+  }
+  return stars;
+}
+function getSelectedRating() {
+  const selectedStar = document.querySelector('.rating input:checked');
+  if (selectedStar) {
+    return parseInt(selectedStar.id.replace('star', ''));
+  }
+  return 0; 
+}
+
 // Function to submit the form
 async function submitForm(event) {
     event.preventDefault();
@@ -152,7 +168,8 @@ function displayComment() {
   const date = document.querySelector('#date').value;
   const topic = document.querySelector('#topic').value;
   const comment = document.querySelector('#comment').value;
-
+  const rating = getSelectedRating(); 
+  const starDisplay = getStarRating(rating); 
   // Create a new comment element
   const newComment = document.createElement('div');
   newComment.className = 'user-comment';
@@ -161,10 +178,12 @@ function displayComment() {
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Date:</strong> ${date}</p>
       <p><strong>Topic:</strong> ${topic}</p>
+      <p><strong>Rating:</strong> ${starDisplay}</p>
       <p><strong>Your comment:</strong> ${comment}</p>
+       
       <hr>
   `;
-
+ 
   // Append the new comment to the comment container
   commentContainer.appendChild(newComment);
 
