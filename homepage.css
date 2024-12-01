@@ -643,10 +643,13 @@ strong{
     }
 
     .rating{
-        width: 350px;
+        width: 200px;
+        margin-top: 15px;
+        margin-bottom: -40px;
     }
     .rating label::after{
         margin-top: -20px;
+        font-size: 40px;
     }
     .title-guest {
         font-size: 35px;
@@ -707,7 +710,6 @@ strong{
 
     small{
         font-size: 14px;
-        font-weight: 200;
     }
     .error{
         font-size: 15px;
@@ -715,14 +717,13 @@ strong{
 
     
     button{
-        width: 80%;
+        width: 100%;
         height: 40px;
         font-weight: 500;
-        margin: -9px auto;
-        position: relative;
-        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-
+    
 
     /*members-slide*/
 
@@ -847,7 +848,7 @@ strong{
 
     .title-guest {
         font-size: 30px;
-        padding-top: 25px;
+        padding-top: 40px;
         padding-bottom: 15px;
     }
     .subtitle {
@@ -862,39 +863,15 @@ strong{
 
     .rating{
         gap: 0;
-        margin-top: 5px;
-        margin-bottom: 50px;
-        width: 230px;
+        margin-top: 10px;
+        margin-bottom: -50px;
+        width: 190px;
     }
     .rating label::after{
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 100;
     }
-    #containerguestbook{
-        margin-top: -900px;
-    }
 
-    .container form{
-        display: inline;
-        
-    }
-
-    form .form-group{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-group label{
-        position: absolute;
-        margin-top: 65px;
-        font-size: 13px;
-    }
-
-    .form-group input:focus~label,
-    .form-group input:valid~label{
-        top: -18px;
-        font-size: 10px;
-    }
 
     #containerguestbook{
         margin-top: -850px;
@@ -902,22 +879,20 @@ strong{
         display: block;
     }
 
-    .container form{
-        flex-direction: column;
-    }
-
     form .form-group{
-        /*width: calc(100% /2 -20px);*/
         margin: 0px;
         width: 100%;
         padding: 0px 30px;
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
     .form-group label{
         position: absolute;
         margin-top: 40px;
         font-size: 13px;
         font-weight: 300;
+        padding-left: 20px;
     }
 
     .form-group input:focus~label,
@@ -962,16 +937,6 @@ strong{
         padding-right: 10px;
     }
 
-    button{
-        width: 80%;
-        height: 30px;
-        font-weight: 400;
-        font-size: 14px;
-        margin: 10px auto;
-        position: relative;
-        display: block;
-    }
-
     .form-group select{
         margin-top: 15px;
     }
@@ -979,7 +944,7 @@ strong{
     h3{
         font-size: 20px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: -60px;
         margin-left: 0px;
     }
 
@@ -996,12 +961,16 @@ strong{
         font-size: 12px;
     }
 
-    small{
-        font-weight: 200;
+    .form-group small{
+        font-size: 11px;
     }
-
     .error{
         font-size: 13px;
+    }
+    button{
+        height: 30px;
+        font-weight: 400;
+        margin-top: 10px;
     }
 
     /*--members-slide--*/
@@ -1070,16 +1039,7 @@ strong{
     main {
         margin-top: 300px;
     }
-    .rating{
-        gap: 0;
-        margin-top: 5px;
-        margin-bottom: 40px;
-        width: 200px;
-    }
-    .rating label::after{
-        font-size: 40px;
-        font-weight: 100;
-    }
+
 }
 
 @media (min-width: 491px) and (max-width: 575px) {
@@ -1092,6 +1052,12 @@ strong{
     main {
         margin-top: 300px;
     }
+    .form-group small{
+        font-size: 10px;
+    }
+    .error{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 490px) {
@@ -1100,6 +1066,18 @@ strong{
     }
     main {
         margin-top: 270px;
+    }
+    .rating{
+        width: 160px;
+        margin-top: 15px;
+        margin-bottom: -60px;
+    }
+    .rating label::after{
+        font-size: 30px;
+    }
+    button{
+        font-weight: 300;
+        font-size: 15px;
     }
 }
 
@@ -1120,13 +1098,19 @@ strong{
     main {
         margin-top: 200px;
     }
+    .form-group small{
+        font-size: 10px;
+    }
+    .error{
+        font-size: 11px;
+    }
+
 }
 
 @media (max-width: 360px) {
     .rating{
         gap: 0;
         margin-top: 15px;
-        margin-bottom: -70px;
         width: 100px;
     }
     .rating label::after{
@@ -1167,10 +1151,13 @@ strong{
         font-size: 11px;
     }
 
-    .form-comment label{
-        font-size: 11px;
+    .form-group small{
+        font-size: 9px;
     }
 
+    .form-comment{
+        font-size: 11px;
+    }
     .form-comment textarea{
         font-size: 10px;
     }
@@ -1196,5 +1183,8 @@ strong{
 
     .error{
         font-size: 9px;
+    }
+    p{
+        font-weight: 100;
     }
 }
