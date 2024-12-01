@@ -866,7 +866,9 @@ strong{
     }
     /*image style(members-slide)*/
     .members-image img {
-        height: 80%;
+        height: 190px;
+        position: absolute;
+        top: 140px;
     }
     /*button(members-slide)*/
     #right,#left {
