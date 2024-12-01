@@ -196,7 +196,3 @@ function displayComment() {
     star.checked = false; // Uncheck all selected stars
   });
 }
-
-
-
-//Future

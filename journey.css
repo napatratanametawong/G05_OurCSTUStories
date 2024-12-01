@@ -136,7 +136,7 @@ nav a:hover::after {
     font-size: 20px;
     color: #54f271;
     font-family: "Mitr",sans-serif;
-    border:3px solid #54f271;
+    border:2px solid #54f271;
     width: fit-content;
     padding: 10px 20px;
     border-radius: 100px;
@@ -438,7 +438,8 @@ nav a:hover::after {
     border: solid 0.5px;
     border-radius: 20px;
     border-color: white;
-    background-color: #666a7686;
+    background: rgba(215, 210, 210, 0.40);
+    backdrop-filter: blur(5px);
     padding: 30px;
     z-index: 1;
     margin-top: -90px;
@@ -694,76 +695,6 @@ nav a:hover::after {
 
 }
 
-/* @media (max-width:1380px){
-
-    .title {
-        .main_title {
-            font-size: 28px;
-        }
-    
-        .sub_title {
-            font-size: 20px;
-        }
-
-        margin-top: -70px;
-    
-    }
-
-    .cards {
-        width: 90%;
-        justify-content: center;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-
-}
-
-@media (max-width:1300px){
-
-    .title {
-        .main_title {
-            font-size: 28px;
-        }
-    
-        .sub_title {
-            font-size: 20px;
-        }
-
-        margin-top: -70px;
-    
-    }
-
-    .cards {
-        width: 90%;
-        justify-content: center;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-
-} */
-
-/* @media (max-width:1040px){
-
-    .title {
-        .main_title {
-            font-size: 25px;
-        }
-    
-        .sub_title {
-            font-size: 20px;
-        }
-    
-    }
-
-    .cards {
-        width: 90%;
-        justify-content: center;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-
-} */
-
 @media (max-width: 1200px) {
 
     .title {
@@ -826,26 +757,6 @@ nav a:hover::after {
 
 }
 
-/* @media (max-width: 821px) {
-
-    .title {
-        .main_title {
-            font-size: 22px;
-        }
-    
-        .sub_title {
-            font-size: 16px;
-        }
-    
-    }
-
-    .cards {
-        width: 90%;
-        justify-content: center;
-    }
-
-    
-} */
 @media (max-width: 915px) {
 
     .mid_container {
