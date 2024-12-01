@@ -649,9 +649,20 @@ strong{
         font-size: 15px;
     }
 
-    /*text members-slide*/
+    /*members-slide*/
+    
+    /*card(members-slide)*/
+    .card-item {
+        width: 320px;
+        height: 470px;
+    }
+
+    /*text(members-slide)*/
     .card-item .subtitle {
         margin: 0;
+    }
+    .card-item .name {
+        font-size: 35px;
     }
 }
 
