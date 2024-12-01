@@ -560,6 +560,22 @@ strong{
     font-weight: 400;
 }
 
+/*alert box*/
+.swal2-popup {
+    font-family: "Mitr",serif;
+}
+.swal2-title{
+    font-family: "Mitr",serif;
+}
+
+.swal2-confirm {
+    background-color: #1B273A;
+}
+
+.swal2-confirm:hover{
+    background-color: #4315D7;
+}
+
 /* set pc for other media*/
 @media (min-width:786px) {
     /*members-slide*/
