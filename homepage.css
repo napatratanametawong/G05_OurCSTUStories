@@ -247,6 +247,15 @@ h2{
     font-size: 80px;
     -webkit-animation:1s pulse ease;
     animation: 1s pulse ease;
+    font-size: 80px;
+}
+.rating input{
+    display: none;
+}
+.rating input:checked ~ label::after{
+    content: "★";
+    color: #d2d21f;
+    text-shadow: 0 0 20px #d2d21f;
 }
 
 /*hover effect*/
