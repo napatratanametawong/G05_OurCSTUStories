@@ -160,6 +160,15 @@ form.addEventListener('submit', function (event) {
   form.reset();
 });
 
+//alert after click submit
+document.getElementById("submitButton").addEventListener("click", function () {
+  Swal.fire({
+      icon: 'success', 
+      title: 'Thank you!', 
+      text: 'Your comment has been successfully submitted', 
+      confirmButtonText: 'OK' 
+  });
+});
 
 
 //Future
