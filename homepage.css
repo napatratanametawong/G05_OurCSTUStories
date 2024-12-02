@@ -189,7 +189,7 @@ nav a:hover::after {
 }
 
 main {
-    margin-top: 900px;
+    margin-top: 20%;
 }
 
 .title-member{
@@ -661,9 +661,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding: 1.3rem 5%;
     }
 
-    main {
-        margin-top: 600px;
-    }
 
     .cstu-container {
         font-size: 80px;
@@ -816,9 +813,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .cstu-container {
         top: 30%;
     }
-    main {
-        margin-top: 500px;
-    }
+
     .container form {
         padding: 0px 20px;
     }
@@ -903,11 +898,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .gradient-box {
         top: 19%;
     }
-
-    main {
-        margin-top: 450px;
-    }
-
 
     .title-guest {
         font-size: 30px;
@@ -1090,9 +1080,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         gap: 160px;
     }
 
-    main {
-        margin-top: 400px;
-    }
     .container form{
         padding: 0px 20px;
     }
@@ -1100,9 +1087,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 576px) {
-    main {
-        margin-top: 300px;
-    }
     .container form{
         padding: 0px 15px;
     }
@@ -1117,9 +1101,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         gap: 160px;
     }
     
-    main {
-        margin-top: 300px;
-    }
     .form-group small{
         font-size: 10px;
     }
@@ -1132,9 +1113,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .cstu-container {
         top: 18%;
     }
-    main {
-        margin-top: 270px;
-    }
+
     .rating{
         width: 160px;
         margin-top: 15px;
@@ -1174,9 +1153,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         top: 10%;
         gap: 140px;
     }
-    main {
-        margin-top: 200px;
-    }
 
     .slide-container {
         margin-top: 200px;
@@ -1186,9 +1162,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media (max-width: 390px) {
     .cstu-container {
         gap: 120px;
-    }
-    main {
-        margin-top: 200px;
     }
     .form-group small{
         font-size: 10px;
