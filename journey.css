@@ -15,6 +15,25 @@ body {
     overflow-x: hidden;
 }
 
+/*effect when scroll*/
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+section {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
 header {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
