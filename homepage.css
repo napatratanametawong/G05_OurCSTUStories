@@ -621,6 +621,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 1111px){
+    .gradient-box {
+        display: none;
+    }
+
     .subtitle2{
         font-size: 21px;
     }
@@ -1163,6 +1167,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         gap: 140px;
     }
     main {
+        margin-top: 200px;
+    }
+
+    .slide-container {
         margin-top: 200px;
     }
 }
