@@ -599,6 +599,13 @@ strong{
 .swal2-confirm:hover{
     background-color: #4315D7;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #A0FEFB; 
+    color: #A0FEFB; 
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+}
 
 /* set pc for other media*/
 @media (min-width:786px) {
@@ -933,7 +940,7 @@ strong{
     }
     .form-group label{
         position: absolute;
-        margin-top: 40px;
+        margin-top: 30px;
         font-size: 13px;
         font-weight: 300;
         padding-left: 20px;
@@ -952,12 +959,9 @@ strong{
         font-size: 13px;
         font-weight: 300;
         height: 35px;
+        margin-top: -10px;
     }
 
-    #containerguestbook .form-group input{
-        display: flex;
-        
-    }
     .form-comment label{
         font-size: 13px;
         font-weight: 300;
