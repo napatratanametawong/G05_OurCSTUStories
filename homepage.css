@@ -903,6 +903,7 @@ strong{
     .subtitle2{
         font-size: 13px;
         padding-top: 20px;
+        margin: 0px 20px;
     }
 
     .rating{
@@ -1133,6 +1134,23 @@ strong{
     h3{
         margin-top: -80px;
     }
+    form .form-group{
+        margin-bottom: -5px;
+    }
+    .form-group label{
+        font-size: 11px;
+        padding-left: 10px;
+        padding-top: 12px;
+    }
+    .form-group input,
+    .form-group select{
+        font-size: 11px;
+        padding-left: 7px;
+    }
+    .container .form-comment label{
+        font-size: 11px;
+        padding-left: 10px;
+    }
 }
 
 @media (min-width: 391px) and(max-width: 489px) {
@@ -1162,8 +1180,22 @@ strong{
         margin: 0px 40px;
     }
 
-    .container form{
-        padding: 0 0;
+    form .form-group{
+        margin-bottom: -5px;
+    }
+    .form-group label{
+        font-size: 11px;
+        padding-left: 10px;
+        padding-top: 12px;
+    }
+    .form-group input,
+    .form-group select{
+        font-size: 11px;
+        padding-left: 7px;
+    }
+    .container .form-comment label{
+        font-size: 11px;
+        padding-left: 10px;
     }
 }
 
@@ -1236,7 +1268,7 @@ strong{
     h3{
         font-size: 15px;
         text-align: center;
-        margin-top: -10px;
+        margin-top: -80px;
         margin-left: 0px;
     }
 
@@ -1247,7 +1279,31 @@ strong{
     .error{
         font-size: 9px;
     }
-    p{
-        font-weight: 100;
+}
+@media (max-width: 300px) {
+    .form-group label{
+        font-size: 9px;
+        padding-left: 10px;
+        padding-top: 12px;
+    }
+    .form-group input,
+    .form-group select{
+        font-size: 9px;
+        padding-left: 7px;
+    }
+    .container .form-comment label{
+        font-size: 9px;
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+    .container .form-comment{
+        font-size: 9px;
+    }
+    button{
+        height: 20px;
+        font-size: 11px;
+    }
+    h3{
+        margin-top: -88px;
     }
 }
