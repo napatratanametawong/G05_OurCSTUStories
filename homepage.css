@@ -9,6 +9,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     background: #041228;
 }
@@ -34,6 +36,7 @@ section {
 
 /*navbar*/
 header {
+    flex: 0 0 auto;
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -164,6 +167,7 @@ nav a:hover::after {
     position: relative;
     top: 100px;
     width: 100%;
+    padding-bottom: 100px;
 }
 .background-cover {
     background-position: center;
@@ -189,9 +193,13 @@ nav a:hover::after {
 }
 
 main {
-    margin-top: 20%;
+    flex: 1 0 auto;
 }
 
+.description-member {
+    width: 80%;
+    margin: 10% 10%;
+}
 .title-member{
     color: #A0FEFB;
     font-size: 48px;
@@ -199,7 +207,6 @@ main {
     font-optical-sizing: auto;
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 50px;
 }
 
 
@@ -660,12 +667,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     header {
         padding: 1.3rem 5%;
     }
-
+    .title-member {
+        font-size: 35px;
+    }
 
     .cstu-container {
         font-size: 80px;
         top: 20%;
         gap: 250px;
+        margin-bottom: 20%;
     }
     
     .gradient-box {
@@ -1086,6 +1096,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 }
 
+@media (max-width:575px) {
+    .description-member {
+        padding-bottom: 10%;
+    }
+
+}
 @media (max-width: 576px) {
     .container form{
         padding: 0px 15px;
