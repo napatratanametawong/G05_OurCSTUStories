@@ -309,23 +309,6 @@ nav a:hover::after {
 
 @media (max-width: 770px) {
 
-    header.scrolled {
-        background: rgba(41,40,40,0.918);
-        backdrop-filter: none;
-    }
-
-    nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background: rgba(74, 72, 72, 0.868);
-        box-shadow: 0 2px 5px rgba(227, 224, 224, 0.3);
-        overflow: hidden;
-        transition: .3s ease;
-    }
-    
     .top-image{
         display: none;
     }
@@ -391,14 +374,19 @@ nav a:hover::after {
         display: block;
     }
 
+    header.scrolled {
+        background: rgba(41,40,40,0.918);
+        backdrop-filter: none;
+    }
+
     nav {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         height: 0;
-        background: rgba(112, 111, 111, 0.116);
-        backdrop-filter: blur(50px);
+        background: rgba(74, 72, 72, 0.868);
+        box-shadow: 0 2px 5px rgba(227, 224, 224, 0.3);
         overflow: hidden;
         transition: .3s ease;
     }
