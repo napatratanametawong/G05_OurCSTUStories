@@ -545,6 +545,7 @@ button{
     margin: 0px 30px;
     font-size: 16px;
     cursor: pointer;
+    color: #041228;
 }
 button:hover {
     background-color: #A0FEFB;
