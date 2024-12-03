@@ -653,6 +653,11 @@ input[type="date"]:valid + .posidate {
 }
 
 @media (max-width: 1111px){
+    header.scrolled {
+        background: rgba(52,51,51,0.868);
+        backdrop-filter: none;
+        box-shadow:0 2px 5px rgba(227,224,224,0.3);
+    }
 
     .subtitle2{
         font-size: 21px;
