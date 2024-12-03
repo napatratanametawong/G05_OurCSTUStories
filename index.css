@@ -948,6 +948,10 @@ input[type="date"]:valid + .posidate {
         top: 19%;
     }
 
+    .card-item .subtitle {
+        font-size: 16px;
+    }
+
     .title-guest {
         font-size: 30px;
         padding-top: 40px;
@@ -1226,12 +1230,16 @@ input[type="date"]:valid + .posidate {
         height: 450px;
     }
     #right,#left {
-        top:84.5%;
+        top:45%;
         left:15%;
     }
     #right {
         left: unset;
-        right: 15%;
+        right: 10%;
+    }
+    #left {
+        left: 10%;
+        right: unset;
     }
 
 }
