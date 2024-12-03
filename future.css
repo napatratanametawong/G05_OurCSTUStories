@@ -2647,3 +2647,13 @@ body {
         transition: .3s ease;
     }
 }
+
+@media (min-width: 769px) and (max-width: 826px) {
+    header {
+        padding: 1.3rem 2%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+}
