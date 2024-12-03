@@ -777,6 +777,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     
 
     /*members-slide*/
+    .slide-wrapper {
+        height: 470px;
+    }
 
     /*card(members-slide)*/
     .card-item {
@@ -1035,6 +1038,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     /*--members-slide--*/
+    .slide-wrapper {
+        height: 375px;
+    }
     .card-item {
         width: 250px;
         height: 375px;
