@@ -28,3 +28,25 @@ toggleBtn.addEventListener("click", () => {
   }
   isExpanded = !isExpanded; // เปลี่ยนสถานะ
 });
+
+//click image then scroll
+// เลือกรูปภาพทั้งหมดที่มี data-target
+const futurePeopleImages = document.querySelectorAll('.future-person');
+
+// เพิ่ม event listener ให้กับรูปภาพแต่ละอัน
+futurePeopleImages.forEach(image => {
+  image.addEventListener('click', function () {
+    // ดึงค่า data-target ที่เชื่อมโยงกับการ์ด
+    const targetId = this.getAttribute('data-target');
+    const targetElement = document.getElementById(targetId);
+
+    // ตรวจสอบว่า targetElement นั้นมีอยู่
+    if (targetElement) {
+      // เลื่อนหน้าจอไปยังการ์ดที่ตรงกับ target
+      targetElement.scrollIntoView({
+        behavior: 'smooth', // เลื่อนอย่างนุ่มนวล
+        block: 'start'      // เริ่มต้นจากด้านบนของ element
+      });
+    }
+  });
+});
