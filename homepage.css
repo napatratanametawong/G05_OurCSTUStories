@@ -1047,6 +1047,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         position: absolute;
         top: 140px;
     }
+    /*name(members-slide)*/
+    #nung-ning {
+        position: relative;
+        left: -12%;
+    }
+
     /*button(members-slide)*/
     #right,#left {
         top: 45%;
