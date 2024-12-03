@@ -196,10 +196,3 @@ function displayComment() {
     star.checked = false; // Uncheck all selected stars
   });
 }
-
-document.addEventListener("DOMContentLoaded", function () { 
-  const dateInput = document.querySelector("#date"); 
-  if (dateInput.type === "date") { 
-    dateInput.setAttribute("text", "mm/dd/yyyy"); 
-  } 
-});
