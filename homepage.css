@@ -397,6 +397,7 @@ button .material-symbols-outlined{
 .card-item .subtitle {
     width: 100%;
     text-align: left;
+    font-size: 22px;
 }
 /*contact*/
 .contact-container {
@@ -637,11 +638,7 @@ input[type="date"]:valid + .posidate {
   font-size: 12px;
 }
   
-@media (min-width:993px) {
-    .jui--info .subtitle{
-        font-size: 22px;
-    }
-}
+
 /* set pc for other media*/
 @media (min-width:786px) {
     /*members-slide*/
