@@ -717,7 +717,7 @@ body {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 10px;
         margin-top: 23px;
     }
 
@@ -749,8 +749,8 @@ body {
     }
 
     .future-maker-images .future-person {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         object-fit: cover; /* ป้องกันภาพเบี้ยว */
     }
 
@@ -1738,8 +1738,8 @@ body {
     }
 
     .future-maker-images .future-person {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     .future-ai {
